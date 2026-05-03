@@ -66,8 +66,6 @@ blockquote{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font
 .card-icon{font-size:28px;margin-bottom:16px}
 .card-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:400;color:#C8A85D;margin-bottom:12px;line-height:1.25}
 .card-text{font-size:13px;line-height:1.85;color:#8A9A95;font-weight:300}
-
-/* ARTIGOS */
 .artigos-grid{display:flex;flex-direction:column;gap:3px}
 .artigo-card{background:rgba(30,61,52,.4);border:1px solid rgba(200,168,93,.12);padding:48px 44px;transition:all .4s;position:relative;overflow:hidden}
 .artigo-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:#C8A85D}
@@ -86,7 +84,6 @@ blockquote{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font
 .artigo-autor-nome{font-family:'Cormorant Garamond',Georgia,serif;font-size:14px;color:#C8A85D;font-style:italic}
 .destaque{color:#C8A85D;font-weight:500}
 .cita{font-style:italic;color:#C8A85D;font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;border-left:2px solid #C8A85D;padding-left:16px;margin:20px 0;display:block}
-
 .nav-bottom{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:200;display:flex;align-items:center;gap:10px}
 .nav-btn{display:flex;align-items:center;gap:8px;background:rgba(15,42,35,.88);border:1px solid rgba(200,168,93,.3);font-size:11px;letter-spacing:.15em;text-transform:uppercase;padding:10px 20px;cursor:pointer;color:#F5F5F5;transition:all .25s;backdrop-filter:blur(12px)}
 .nav-btn:hover{border-color:#C8A85D;color:#C8A85D}
@@ -149,14 +146,14 @@ footer{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:48px 32
 
 <!-- HERO -->
 <div class="hero" id="s0">
-  <p class="eyebrow">Rio de Janeiro <span>·</span> Turismo <span>·</span> Tecnologia <span>·</span> Natureza</p>
-  <h1>O Rio Que<br><em>Ninguém Te Contou</em></h1>
-  <p class="sub">Histórias, roteiros e segredos de uma cidade que pulsa além do óbvio.</p>
+  <p class="eyebrow" id="eyebrow">Rio de Janeiro <span>·</span> Turismo <span>·</span> Tecnologia <span>·</span> Natureza</p>
+  <h1 id="hero-title">O Rio Que<br><em>Ninguém Te Contou</em></h1>
+  <p class="sub" id="hero-sub">Histórias, roteiros e segredos de uma cidade que pulsa além do óbvio.</p>
   <div class="ctas">
-    <button class="btn-gold" onclick="goTo(2)">↳ Explorar Roteiros</button>
-    <button class="btn-out" onclick="goTo(4)">Ver Artigos</button>
+    <button class="btn-gold" onclick="goTo(2)" id="btn1">↳ Explorar Roteiros</button>
+    <button class="btn-out" onclick="goTo(4)" id="btn2">Ver Artigos</button>
   </div>
-  <div class="scroll-ind"><div class="scroll-line"></div><span class="scroll-lbl">scroll</span></div>
+  <div class="scroll-ind"><div class="scroll-line"></div><span class="scroll-lbl" id="scroll-lbl">scroll</span></div>
 </div>
 
 <div class="divider reveal"><div class="div-line"></div><div class="div-diamond"></div><div class="div-line"></div></div>
@@ -165,16 +162,16 @@ footer{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:48px 32
 <section id="s1">
   <div class="sobre-grid">
     <div class="reveal">
-      <p class="sec-label">Sobre o Olhar</p>
-      <blockquote>"Turismo é ciência.
+      <p class="sec-label" id="sobre-label">Sobre o Olhar</p>
+      <blockquote id="sobre-quote">"Turismo é ciência.
 Também é paixão."</blockquote>
       <div class="assinatura"><div class="assinatura-line"></div><span class="assinatura-nome">Marcos Aurelio T. Gonzaga</span></div>
     </div>
     <div class="reveal" style="transition-delay:.2s">
-      <p class="sec-label">Turismólogo · Rio de Janeiro</p>
+      <p class="sec-label" id="sobre-role">Turismólogo · Rio de Janeiro</p>
       <div class="sobre-texto">
-        <p>Sou turismólogo formado com passagem pelo Bondinho do Pão de Açúcar, na Urca — um dos lugares mais simbólicos do Rio. Mas meu olhar vai além dos cartões-postais.</p>
-        <p>Neste canal, educação em turismo e tecnologia se unem para revelar o Rio que os guias não contam: a história viva dos bairros e os roteiros que surpreendem.</p>
+        <p id="sobre-p1">Sou turismólogo formado com passagem pelo Bondinho do Pão de Açúcar, na Urca — um dos lugares mais simbólicos do Rio. Mas meu olhar vai além dos cartões-postais.</p>
+        <p id="sobre-p2">Neste canal, educação em turismo e tecnologia se unem para revelar o Rio que os guias não contam: a história viva dos bairros e os roteiros que surpreendem.</p>
       </div>
     </div>
   </div>
@@ -185,11 +182,11 @@ Também é paixão."</blockquote>
 <!-- STATS -->
 <div class="stats-sec" id="s2">
   <div class="stats-inner">
-    <div class="reveal" style="text-align:center"><span class="stat-num">+50</span><div class="stat-lbl">Roteiros</div></div>
+    <div class="reveal" style="text-align:center"><span class="stat-num">+50</span><div class="stat-lbl" id="stat1">Roteiros</div></div>
     <div class="stat-div"></div>
-    <div class="reveal" style="text-align:center;transition-delay:.15s"><span class="stat-num">3</span><div class="stat-lbl">Plataformas</div></div>
+    <div class="reveal" style="text-align:center;transition-delay:.15s"><span class="stat-num">3</span><div class="stat-lbl" id="stat2">Plataformas</div></div>
     <div class="stat-div"></div>
-    <div class="reveal" style="text-align:center;transition-delay:.3s"><span class="stat-num">∞</span><div class="stat-lbl">Amor pelo Rio</div></div>
+    <div class="reveal" style="text-align:center;transition-delay:.3s"><span class="stat-num">∞</span><div class="stat-lbl" id="stat3">Amor pelo Rio</div></div>
   </div>
 </div>
 
@@ -198,24 +195,24 @@ Também é paixão."</blockquote>
 <!-- CURIOSIDADES -->
 <section id="s3" style="max-width:1060px">
   <div class="reveal" style="text-align:center;margin-bottom:60px">
-    <p class="sec-label">Lugares que Contam Histórias</p>
-    <h2 class="sec-title">Curiosidades do Rio</h2>
+    <p class="sec-label" id="cur-label">Lugares que Contam Histórias</p>
+    <h2 class="sec-title" id="cur-title">Curiosidades do Rio</h2>
   </div>
   <div class="cards-grid">
     <div class="card reveal">
       <div class="card-num">01</div><div class="card-icon">🌊</div>
-      <h3 class="card-title">Aterro do Flamengo</h3>
-      <p class="card-text">O maior parque urbano do Brasil foi construído sobre aterro na Baía de Guanabara. Projeto de Burle Marx, guarda décadas de história política e cultural carioca.</p>
+      <h3 class="card-title" id="c1t">Aterro do Flamengo</h3>
+      <p class="card-text" id="c1x">O maior parque urbano do Brasil foi construído sobre aterro na Baía de Guanabara. Projeto de Burle Marx, guarda décadas de história política e cultural carioca.</p>
     </div>
     <div class="card reveal" style="transition-delay:.15s">
       <div class="card-num">02</div><div class="card-icon">🌿</div>
-      <h3 class="card-title">Floresta da Tijuca</h3>
-      <p class="card-text">A maior floresta urbana do mundo foi replantada no séc. XIX — pioneirismo em reflorestamento muito antes do conceito existir formalmente.</p>
+      <h3 class="card-title" id="c2t">Floresta da Tijuca</h3>
+      <p class="card-text" id="c2x">A maior floresta urbana do mundo foi replantada no séc. XIX — pioneirismo em reflorestamento muito antes do conceito existir formalmente.</p>
     </div>
     <div class="card reveal" style="transition-delay:.3s">
       <div class="card-num">03</div><div class="card-icon">⚓</div>
-      <h3 class="card-title">Urca</h3>
-      <p class="card-text">O bairro mais tranquilo do Rio esconde segredos militares, trilhas secretas e uma orla que poucos conhecem. O Pão de Açúcar é só a porta de entrada.</p>
+      <h3 class="card-title" id="c3t">Urca</h3>
+      <p class="card-text" id="c3x">O bairro mais tranquilo do Rio esconde segredos militares, trilhas secretas e uma orla que poucos conhecem. O Pão de Açúcar é só a porta de entrada.</p>
     </div>
   </div>
 </section>
@@ -225,98 +222,84 @@ Também é paixão."</blockquote>
 <!-- ARTIGOS -->
 <section id="s4" style="max-width:860px">
   <div class="reveal" style="text-align:center;margin-bottom:60px">
-    <p class="sec-label">Conteúdo & Reflexões</p>
-    <h2 class="sec-title">Artigos</h2>
+    <p class="sec-label" id="art-label">Conteúdo & Reflexões</p>
+    <h2 class="sec-title" id="art-title">Artigos</h2>
   </div>
   <div class="artigos-grid">
 
-    <!-- ARTIGO 1 -->
     <div class="artigo-card reveal">
       <span class="artigo-tag">🥾 Trilha</span><span class="artigo-tag">⚓ Urca</span><span class="artigo-tag">📜 História</span>
-      <div class="artigo-data">1 de maio de 2026</div>
-      <h2 class="artigo-titulo">A trilha que revela um Rio que poucos enxergam — e as histórias escondidas em cada passo</h2>
-      <p class="artigo-preview">Existe um Rio de Janeiro que não aparece nos cartões-postais. Ele se revela nos caminhos silenciosos, onde história, natureza e emoção se entrelaçam. Foi isso que descobri ao percorrer a Trilha Claudio Coutinho.</p>
-      <div class="artigo-expandido" id="a1">
-        <p>Localizada entre a Praia Vermelha e o Morro da Urca, essa trilha de aproximadamente 1,25 km (ida) parece simples à primeira vista — mas carrega séculos de história em cada metro.</p>
-        <p>Logo no início, um detalhe que poucos percebem: o nome "Praia Vermelha" não é por acaso. Ele vem da coloração avermelhada das rochas ricas em óxido de ferro e também de micro-organismos marinhos que tingem a água — um fenômeno raro e fascinante.</p>
-        <p>A Urca é uma área de cerca de 2 km² que precisou ser parcialmente aterrada para existir como conhecemos hoje — um pedaço de terra conquistado entre o mar e as montanhas.</p>
-        <p>E é impossível ignorar a presença do <span class="destaque">Forte de São João</span>. Fundado em 1565, ele marca o ponto exato onde a cidade do Rio de Janeiro começou.</p>
-        <p>Em janeiro de 1502, navegadores portugueses avistaram a entrada da Baía de Guanabara e acreditaram estar diante da foz de um grande rio. O erro geográfico virou nome — e entrou para a história.</p>
-        <span class="cita">"Não basta mostrar lugares. É preciso revelar o que está por trás deles."</span>
-        <p>A Trilha Claudio Coutinho não é só um percurso. É um lembrete. No fim, não é sobre chegar ao destino. É sobre aprender a enxergar o caminho.</p>
+      <div class="artigo-data">1 maio 2026</div>
+      <h2 class="artigo-titulo" id="a1t">A trilha que revela um Rio que poucos enxergam — e as histórias escondidas em cada passo</h2>
+      <p class="artigo-preview" id="a1p">Existe um Rio de Janeiro que não aparece nos cartões-postais. Ele se revela nos caminhos silenciosos, onde história, natureza e emoção se entrelaçam.</p>
+      <div class="artigo-expandido" id="a1e">
+        <p id="a1e1">Localizada entre a Praia Vermelha e o Morro da Urca, a Trilha Claudio Coutinho tem aproximadamente 1,25 km e carrega séculos de história em cada metro.</p>
+        <p id="a1e2">O nome "Praia Vermelha" vem da coloração avermelhada das rochas ricas em óxido de ferro e de micro-organismos marinhos que tingem a água — um fenômeno raro e fascinante.</p>
+        <p id="a1e3">O Forte de São João, fundado em 1565, marca o ponto exato onde a cidade do Rio de Janeiro começou. Em janeiro de 1502, navegadores portugueses avistaram a Baía de Guanabara e acreditaram estar diante de um rio. O erro virou nome.</p>
+        <span class="cita" id="a1q">"Não basta mostrar lugares. É preciso revelar o que está por trás deles."</span>
+        <p id="a1e4">A Trilha Claudio Coutinho não é só um percurso. É um lembrete. Não é sobre chegar ao destino — é sobre aprender a enxergar o caminho.</p>
       </div>
-      <button class="artigo-btn" onclick="toggle('a1',this)">Ler mais →</button>
+      <button class="artigo-btn" id="a1btn" onclick="toggle('a1e','a1btn')">Ler mais →</button>
       <div class="artigo-autor"><div class="artigo-autor-line"></div><span class="artigo-autor-nome">Marcos Gonzaga — Turismólogo e Analista de Sistemas</span></div>
     </div>
 
-    <!-- ARTIGO 2 -->
     <div class="artigo-card reveal" style="transition-delay:.1s">
-      <span class="artigo-tag">🔺 Mito</span><span class="artigo-tag">🏙️ Turismo Estratégico</span>
-      <div class="artigo-data">23 de abril de 2026</div>
-      <h2 class="artigo-titulo">O "triângulo invisível" do Rio: mito ou a maior oportunidade perdida do turismo brasileiro?</h2>
-      <p class="artigo-preview">Nem toda história precisa ser real para transformar a forma como um destino é vivido. Existe uma história curiosa sobre o Cristo Redentor, o Pão de Açúcar e a Pedra da Gávea...</p>
-      <div class="artigo-expandido" id="a2">
-        <p>Alguns dizem que esses três pontos formam um triângulo simbólico sobre a cidade. Uma espécie de campo de proteção. Um alinhamento que carrega significado além da paisagem. Não há comprovação científica — mas o ponto mais interessante não é esse.</p>
-        <p>É o fato de que histórias como essa têm o poder de transformar completamente a forma como um lugar é percebido.</p>
-        <p>Durante anos trabalhando no Bondinho do Pão de Açúcar, algo ficou claro: o visitante não busca apenas ver um destino. Ele busca sentir que está vivendo algo único.</p>
-        <p>O Rio de Janeiro não é apenas um conjunto de pontos turísticos isolados. É um território cheio de camadas: históricas, culturais, simbólicas e até imaginativas. Mas essas camadas raramente são integradas à experiência.</p>
-        <span class="cita">"Países ao redor do mundo não vendem apenas lugares. Eles constroem significados."</span>
-        <p>No Brasil, ainda tratamos muitas dessas narrativas como curiosidade — quando poderiam ser ferramentas estratégicas. No turismo moderno, não vence quem tem apenas o cenário mais bonito. Vence quem sabe dar sentido ao que o visitante vê.</p>
+      <span class="artigo-tag">🔺 Mito</span><span class="artigo-tag">🏙️ Estratégia</span>
+      <div class="artigo-data">23 abr 2026</div>
+      <h2 class="artigo-titulo" id="a2t">O "triângulo invisível" do Rio: mito ou a maior oportunidade perdida do turismo brasileiro?</h2>
+      <p class="artigo-preview" id="a2p">Nem toda história precisa ser real para transformar a forma como um destino é vivido. Existe uma história curiosa sobre o Cristo Redentor, o Pão de Açúcar e a Pedra da Gávea.</p>
+      <div class="artigo-expandido" id="a2e">
+        <p id="a2e1">Alguns dizem que esses três pontos formam um triângulo simbólico sobre a cidade. Não há comprovação científica — mas histórias como essa têm o poder de transformar completamente como um lugar é percebido.</p>
+        <p id="a2e2">Durante anos no Bondinho do Pão de Açúcar, ficou claro: o visitante não busca apenas ver um destino. Ele busca sentir que está vivendo algo único.</p>
+        <span class="cita" id="a2q">"Países ao redor do mundo não vendem apenas lugares. Eles constroem significados."</span>
+        <p id="a2e3">No Brasil, ainda tratamos essas narrativas como curiosidade — quando poderiam ser ferramentas estratégicas. No turismo moderno, não vence quem tem o cenário mais bonito. Vence quem sabe dar sentido ao que o visitante vê.</p>
       </div>
-      <button class="artigo-btn" onclick="toggle('a2',this)">Ler mais →</button>
+      <button class="artigo-btn" id="a2btn" onclick="toggle('a2e','a2btn')">Ler mais →</button>
       <div class="artigo-autor"><div class="artigo-autor-line"></div><span class="artigo-autor-nome">Marcos Gonzaga — Turismólogo e Analista de Sistemas</span></div>
     </div>
 
-    <!-- ARTIGO 3 -->
     <div class="artigo-card reveal" style="transition-delay:.2s">
       <span class="artigo-tag">🚡 Bondinho</span><span class="artigo-tag">💡 Experiência</span>
-      <div class="artigo-data">23 de abril de 2026</div>
-      <h2 class="artigo-titulo">Trabalhei 9 anos no Bondinho do Pão de Açúcar — e foi ali que entendi por que o turismo no Brasil não evolui como poderia</h2>
-      <p class="artigo-preview">A paisagem impressiona. A experiência, nem sempre. Durante esse tempo, eu vi a mesma cena se repetir todos os dias: o visitante chegava encantado, subia, admirava... e ia embora. Faltava algo.</p>
-      <div class="artigo-expandido" id="a3">
-        <p>A experiência era bonita — mas muitas vezes superficial. Faltava condução. Faltava narrativa. Faltava intenção.</p>
-        <p>Pouca gente percebe como o Cristo Redentor, o próprio Pão de Açúcar e a Pedra da Gávea estão cercados por histórias, simbolismos e narrativas culturais que poderiam transformar completamente esse percurso.</p>
-        <p>O visitante vê. Mas não entende. Se encanta. Mas não se conecta.</p>
-        <p>Enquanto isso, países com menos recursos naturais avançam com consistência. Não porque têm mais atrativos. Mas porque sabem transformar território em experiência.</p>
-        <span class="cita">"Turismo não é só destino. É construção. É roteiro. É emoção guiada."</span>
-        <p>O Brasil não precisa se reinventar. Precisa se organizar. Porque no cenário global atual, não vence quem tem mais recursos. Vence quem sabe usar melhor o que tem.</p>
+      <div class="artigo-data">23 abr 2026</div>
+      <h2 class="artigo-titulo" id="a3t">Trabalhei 9 anos no Bondinho do Pão de Açúcar — e foi ali que entendi por que o turismo no Brasil não evolui como poderia</h2>
+      <p class="artigo-preview" id="a3p">A paisagem impressiona. A experiência, nem sempre. Durante esse tempo, vi a mesma cena se repetir: o visitante chegava encantado, subia, admirava... e ia embora. Faltava algo.</p>
+      <div class="artigo-expandido" id="a3e">
+        <p id="a3e1">A experiência era bonita — mas superficial. Faltava condução, narrativa, intenção. O Cristo Redentor, o Pão de Açúcar e a Pedra da Gávea estão cercados por histórias que poderiam transformar completamente o percurso.</p>
+        <p id="a3e2">O visitante vê. Mas não entende. Se encanta. Mas não se conecta. Países com menos recursos naturais avançam porque sabem transformar território em experiência.</p>
+        <span class="cita" id="a3q">"Turismo não é só destino. É construção. É roteiro. É emoção guiada."</span>
+        <p id="a3e3">O Brasil não precisa se reinventar. Precisa se organizar. No cenário global, não vence quem tem mais recursos — vence quem sabe usar melhor o que tem.</p>
       </div>
-      <button class="artigo-btn" onclick="toggle('a3',this)">Ler mais →</button>
+      <button class="artigo-btn" id="a3btn" onclick="toggle('a3e','a3btn')">Ler mais →</button>
       <div class="artigo-autor"><div class="artigo-autor-line"></div><span class="artigo-autor-nome">Marcos Gonzaga — Turismólogo e Analista de Sistemas</span></div>
     </div>
 
-    <!-- ARTIGO 4 -->
     <div class="artigo-card reveal" style="transition-delay:.3s">
       <span class="artigo-tag">🌆 Dois Rios</span><span class="artigo-tag">❤️ Social</span>
       <div class="artigo-data">2026</div>
-      <h2 class="artigo-titulo">Dois Rios de Janeiro: o choque de realidade que a cidade esconde</h2>
-      <p class="artigo-preview">Caminhando pela Zona Sul, depois de atravessar as ruas de Ipanema e chegar à Lagoa Rodrigo de Freitas, a impressão é forte: são dois Rios de Janeiro dentro da mesma cidade.</p>
-      <div class="artigo-expandido" id="a4">
-        <p>De um lado, gente bem vestida caminhando ou correndo, restaurantes cheios, vida de conforto e lazer. Do outro, o Rio que eu atendo no CRAS, na Zona Norte: famílias humildes das comunidades, lutando pelo básico.</p>
-        <p>Trabalhei anos na Zona Sul — hotéis em Copacabana, Leblon, Recreio e Urca, inclusive no Bondinho do Pão de Açúcar. O luxo ali parecia normal. Mas quando comecei a trabalhar com o público do CRAS, o contraste bateu forte.</p>
-        <p>Quando eu trabalhava no bondinho, levávamos crianças carentes dos morros para passear. O olhar delas ao subir e ver a Praia Vermelha do alto era de puro encantamento. Muitas nunca tinham visto aquela vista de perto, mesmo morando a poucos quilômetros.</p>
-        <span class="cita">"O brilho nos olhos mostrava o quanto aquela experiência era mágica — e revelava como o acesso aos espaços bonitos da cidade é desigual."</span>
-        <p>O turismo, que impulsiona a economia carioca, muitas vezes não chega de forma justa para quem mais precisa. Talvez seja hora de construir um turismo e uma cidade que inclua de verdade todas as suas realidades.</p>
+      <h2 class="artigo-titulo" id="a4t">Dois Rios de Janeiro: o choque de realidade que a cidade esconde</h2>
+      <p class="artigo-preview" id="a4p">Caminhando pela Zona Sul, depois de atravessar Ipanema e chegar à Lagoa Rodrigo de Freitas, a impressão é forte: são dois Rios de Janeiro dentro da mesma cidade.</p>
+      <div class="artigo-expandido" id="a4e">
+        <p id="a4e1">De um lado, restaurantes cheios, vida de conforto e lazer. Do outro, o Rio que atendo no CRAS, na Zona Norte: famílias humildes das comunidades, lutando pelo básico.</p>
+        <p id="a4e2">Quando trabalhava no Bondinho, levávamos crianças carentes dos morros para passear. O olhar delas ao ver a Praia Vermelha do alto era de puro encantamento — muitas nunca tinham visto aquela vista, mesmo morando a poucos quilômetros.</p>
+        <span class="cita" id="a4q">"O brilho nos olhos revelava como o acesso aos espaços bonitos da cidade é profundamente desigual."</span>
+        <p id="a4e3">Talvez seja hora de construir um turismo que inclua de verdade todas as realidades do Rio — não só as que aparecem nas fotos.</p>
       </div>
-      <button class="artigo-btn" onclick="toggle('a4',this)">Ler mais →</button>
+      <button class="artigo-btn" id="a4btn" onclick="toggle('a4e','a4btn')">Ler mais →</button>
       <div class="artigo-autor"><div class="artigo-autor-line"></div><span class="artigo-autor-nome">Marcos Gonzaga — Turismólogo e Analista de Sistemas</span></div>
     </div>
 
-    <!-- ARTIGO 5 -->
     <div class="artigo-card reveal" style="transition-delay:.4s">
       <span class="artigo-tag">🏖️ Leblon</span><span class="artigo-tag">🏙️ Turismo Urbano</span>
       <div class="artigo-data">2026</div>
-      <h2 class="artigo-titulo">Leblon: o bairro que já funciona — e o que ele ensina sobre o futuro do turismo urbano</h2>
-      <p class="artigo-preview">Você caminha pela Rua Bartolomeu Mitre, no Leblon, e percebe: movimento equilibrado. Turistas misturados a moradores, calçadas limpas, restaurantes lotados sem caos. Tudo parece funcionar.</p>
-      <div class="artigo-expandido" id="a5">
-        <p>Não é o bairro mais "instagramável" do Rio — sem Cristo ou Pão de Açúcar. Mas seu trunfo é entregar o que o turismo moderno quer: experiência fluida, segurança percebida, integração local.</p>
-        <p>Três anos na recepção do Apart Hotel Monsieur Leblond: via turistas errarem rotas, gastarem mais — e mudarem quando o ambiente transmitia confiança. Caminhavam mais, exploravam sem pressa, consumiam melhor e voltavam.</p>
-        <p><span class="destaque">O que o Leblon acerta:</span> Escala humana — praia, cafés e serviços integrados. Segurança percebida. Economia distribuída entre restaurantes, galerias e padarias. Mobilidade simples.</p>
-        <p><span class="destaque">O que ainda falta:</span> Gentrificação e custo alto expulsam antigos moradores. Sazonalidade esvazia o bairro no inverno. Trânsito caótico no pico.</p>
-        <span class="cita">"Não cria pontos turísticos — cria ambientes onde as pessoas querem ficar."</span>
-        <p>Futuro do turismo: confiança e fluidez, não multidões. Leblon já faz — com falhas reais, mas potencial enorme. Quantos "Leblons" na sua cidade ainda não viraram ativos turísticos?</p>
+      <h2 class="artigo-titulo" id="a5t">Leblon: o bairro que já funciona — e o que ele ensina sobre o futuro do turismo urbano</h2>
+      <p class="artigo-preview" id="a5p">Você caminha pela Rua Bartolomeu Mitre e percebe: movimento equilibrado, turistas misturados a moradores, restaurantes lotados sem caos. Tudo parece funcionar.</p>
+      <div class="artigo-expandido" id="a5e">
+        <p id="a5e1">Não é o bairro mais instagramável — sem Cristo ou Pão de Açúcar. Mas entrega o que o turismo moderno quer: experiência fluida, segurança percebida, integração local.</p>
+        <p id="a5e2">Três anos na recepção do Apart Hotel Monsieur Leblond: via turistas caminharem mais, explorarem sem pressa e voltarem. A diferença? Sensação de controle, não só infraestrutura.</p>
+        <span class="cita" id="a5q">"Não cria pontos turísticos — cria ambientes onde as pessoas querem ficar."</span>
+        <p id="a5e3">Futuro do turismo: confiança e fluidez, não multidões. Quantos "Leblons" na sua cidade ainda não viraram ativos turísticos?</p>
       </div>
-      <button class="artigo-btn" onclick="toggle('a5',this)">Ler mais →</button>
+      <button class="artigo-btn" id="a5btn" onclick="toggle('a5e','a5btn')">Ler mais →</button>
       <div class="artigo-autor"><div class="artigo-autor-line"></div><span class="artigo-autor-nome">Marcos Gonzaga — Turismólogo e Analista de Sistemas</span></div>
     </div>
 
@@ -336,35 +319,171 @@ Também é paixão."</blockquote>
 </footer>
 
 <div class="nav-bottom">
-  <button class="nav-btn" id="nbp" onclick="navPrev()">← Anterior</button>
+  <button class="nav-btn" id="nbp" onclick="navPrev()">← <span id="nav-prev">Anterior</span></button>
   <div class="nav-label" id="nl">Início</div>
-  <button class="nav-btn" id="nbn" onclick="navNext()">Próximo →</button>
+  <button class="nav-btn" id="nbn" onclick="navNext()"><span id="nav-next">Próximo</span> →</button>
 </div>
 
 <script>
 const sections=['s0','s1','s2','s3','s4'];
-const names=['Início','Sobre','Números','Curiosidades','Artigos'];
-let cur=0;
+let cur=0,lang='pt';
+
+const T={
+  pt:{
+    eyebrow:'Rio de Janeiro · Turismo · Tecnologia · Natureza',
+    'hero-title':'O Rio Que<br><em>Ninguém Te Contou</em>',
+    'hero-sub':'Histórias, roteiros e segredos de uma cidade que pulsa além do óbvio.',
+    btn1:'↳ Explorar Roteiros', btn2:'Ver Artigos',
+    'scroll-lbl':'scroll',
+    'sobre-label':'Sobre o Olhar',
+    'sobre-quote':'"Turismo é ciência.\nTambém é paixão."',
+    'sobre-role':'Turismólogo · Rio de Janeiro',
+    'sobre-p1':'Sou turismólogo formado com passagem pelo Bondinho do Pão de Açúcar, na Urca — um dos lugares mais simbólicos do Rio. Mas meu olhar vai além dos cartões-postais.',
+    'sobre-p2':'Neste canal, educação em turismo e tecnologia se unem para revelar o Rio que os guias não contam: a história viva dos bairros e os roteiros que surpreendem.',
+    stat1:'Roteiros', stat2:'Plataformas', stat3:'Amor pelo Rio',
+    'cur-label':'Lugares que Contam Histórias', 'cur-title':'Curiosidades do Rio',
+    c1t:'Aterro do Flamengo', c1x:'O maior parque urbano do Brasil foi construído sobre aterro na Baía de Guanabara. Projeto de Burle Marx, guarda décadas de história política e cultural carioca.',
+    c2t:'Floresta da Tijuca', c2x:'A maior floresta urbana do mundo foi replantada no séc. XIX — pioneirismo em reflorestamento muito antes do conceito existir formalmente.',
+    c3t:'Urca', c3x:'O bairro mais tranquilo do Rio esconde segredos militares, trilhas secretas e uma orla que poucos conhecem. O Pão de Açúcar é só a porta de entrada.',
+    'art-label':'Conteúdo & Reflexões', 'art-title':'Artigos',
+    a1t:'A trilha que revela um Rio que poucos enxergam — e as histórias escondidas em cada passo',
+    a1p:'Existe um Rio de Janeiro que não aparece nos cartões-postais. Ele se revela nos caminhos silenciosos, onde história, natureza e emoção se entrelaçam.',
+    a1e1:'Localizada entre a Praia Vermelha e o Morro da Urca, a Trilha Claudio Coutinho tem aproximadamente 1,25 km e carrega séculos de história em cada metro.',
+    a1e2:'O nome "Praia Vermelha" vem da coloração avermelhada das rochas ricas em óxido de ferro e de micro-organismos marinhos que tingem a água — um fenômeno raro e fascinante.',
+    a1e3:'O Forte de São João, fundado em 1565, marca o ponto exato onde a cidade do Rio de Janeiro começou. Em janeiro de 1502, navegadores portugueses avistaram a Baía de Guanabara e acreditaram estar diante de um rio. O erro virou nome.',
+    a1q:'"Não basta mostrar lugares. É preciso revelar o que está por trás deles."',
+    a1e4:'A Trilha Claudio Coutinho não é só um percurso. É um lembrete. Não é sobre chegar ao destino — é sobre aprender a enxergar o caminho.',
+    a2t:'O "triângulo invisível" do Rio: mito ou a maior oportunidade perdida do turismo brasileiro?',
+    a2p:'Nem toda história precisa ser real para transformar a forma como um destino é vivido. Existe uma história curiosa sobre o Cristo Redentor, o Pão de Açúcar e a Pedra da Gávea.',
+    a2e1:'Alguns dizem que esses três pontos formam um triângulo simbólico sobre a cidade. Não há comprovação científica — mas histórias como essa têm o poder de transformar completamente como um lugar é percebido.',
+    a2e2:'Durante anos no Bondinho do Pão de Açúcar, ficou claro: o visitante não busca apenas ver um destino. Ele busca sentir que está vivendo algo único.',
+    a2q:'"Países ao redor do mundo não vendem apenas lugares. Eles constroem significados."',
+    a2e3:'No Brasil, ainda tratamos essas narrativas como curiosidade — quando poderiam ser ferramentas estratégicas. No turismo moderno, vence quem sabe dar sentido ao que o visitante vê.',
+    a3t:'Trabalhei 9 anos no Bondinho do Pão de Açúcar — e foi ali que entendi por que o turismo no Brasil não evolui como poderia',
+    a3p:'A paisagem impressiona. A experiência, nem sempre. Durante esse tempo, vi a mesma cena se repetir: o visitante chegava encantado, subia, admirava... e ia embora.',
+    a3e1:'A experiência era bonita — mas superficial. Faltava condução, narrativa, intenção. O Cristo e o Pão de Açúcar estão cercados por histórias que poderiam transformar completamente o percurso.',
+    a3e2:'O visitante vê. Mas não entende. Se encanta. Mas não se conecta. Países com menos recursos avançam porque sabem transformar território em experiência.',
+    a3q:'"Turismo não é só destino. É construção. É roteiro. É emoção guiada."',
+    a3e3:'O Brasil não precisa se reinventar. Precisa se organizar. No cenário global, não vence quem tem mais recursos — vence quem sabe usar melhor o que tem.',
+    a4t:'Dois Rios de Janeiro: o choque de realidade que a cidade esconde',
+    a4p:'Caminhando pela Zona Sul, depois de atravessar Ipanema e chegar à Lagoa Rodrigo de Freitas, a impressão é forte: são dois Rios de Janeiro dentro da mesma cidade.',
+    a4e1:'De um lado, restaurantes cheios, vida de conforto e lazer. Do outro, o Rio que atendo no CRAS, na Zona Norte: famílias humildes das comunidades, lutando pelo básico.',
+    a4e2:'Quando trabalhava no Bondinho, levávamos crianças carentes dos morros para passear. O olhar delas ao ver a Praia Vermelha do alto era de puro encantamento.',
+    a4q:'"O brilho nos olhos revelava como o acesso aos espaços bonitos da cidade é profundamente desigual."',
+    a4e3:'Talvez seja hora de construir um turismo que inclua de verdade todas as realidades do Rio — não só as que aparecem nas fotos.',
+    a5t:'Leblon: o bairro que já funciona — e o que ele ensina sobre o futuro do turismo urbano',
+    a5p:'Você caminha pela Rua Bartolomeu Mitre e percebe: movimento equilibrado, turistas misturados a moradores, restaurantes lotados sem caos.',
+    a5e1:'Não é o bairro mais instagramável — sem Cristo ou Pão de Açúcar. Mas entrega o que o turismo moderno quer: experiência fluida, segurança percebida, integração local.',
+    a5e2:'Três anos na recepção do Apart Hotel Monsieur Leblond: via turistas caminharem mais, explorarem sem pressa e voltarem. A diferença? Sensação de controle.',
+    a5q:'"Não cria pontos turísticos — cria ambientes onde as pessoas querem ficar."',
+    a5e3:'Futuro do turismo: confiança e fluidez, não multidões. Quantos "Leblons" na sua cidade ainda não viraram ativos turísticos?',
+    navPrev:'Anterior', navNext:'Próximo',
+    navNames:['Início','Sobre','Números','Curiosidades','Artigos'],
+    readMore:'Ler mais →', close:'Fechar ↑'
+  },
+  en:{
+    eyebrow:'Rio de Janeiro · Tourism · Technology · Nature',
+    'hero-title':'The Rio<br><em>Nobody Told You About</em>',
+    'hero-sub':'Stories, routes and secrets of a city that pulses beyond the obvious.',
+    btn1:'↳ Explore Routes', btn2:'Read Articles',
+    'scroll-lbl':'scroll',
+    'sobre-label':'About the Channel',
+    'sobre-quote':'"Tourism is science.\nAlso a passion."',
+    'sobre-role':'Tourism Expert · Rio de Janeiro',
+    'sobre-p1':"I'm a tourism professional with experience at Bondinho do Pão de Açúcar in Urca — one of Rio's most iconic landmarks. My perspective goes far beyond postcards.",
+    'sobre-p2':"This channel blends tourism education and technology to reveal the Rio that guides don't tell you: living neighborhood histories and routes that truly surprise.",
+    stat1:'Routes', stat2:'Platforms', stat3:'Love for Rio',
+    'cur-label':'Places That Tell Stories', 'cur-title':'Rio Curiosities',
+    c1t:'Flamengo Park', c1x:"Brazil's largest urban park was built on landfill in Guanabara Bay. Designed by Burle Marx, it holds decades of political and cultural history.",
+    c2t:'Tijuca Forest', c2x:"The world's largest urban forest was entirely replanted in the 19th century — pioneering reforestation long before the concept formally existed.",
+    c3t:'Urca', c3x:"Rio's quietest neighborhood hides military secrets, hidden trails and a waterfront few know. Sugarloaf Mountain is just the gateway.",
+    'art-label':'Content & Insights', 'art-title':'Articles',
+    a1t:'The trail that reveals a Rio few ever see — and the history hidden in every step',
+    a1p:"There is a Rio de Janeiro that doesn't appear on postcards. It reveals itself on silent paths where history, nature and emotion intertwine.",
+    a1e1:'Located between Praia Vermelha and Morro da Urca, the Claudio Coutinho Trail is approximately 1.25 km and carries centuries of history in every meter.',
+    a1e2:'The name "Praia Vermelha" (Red Beach) comes from the reddish hue of iron-oxide-rich rocks and marine microorganisms that tint the water — a rare and fascinating phenomenon.',
+    a1e3:'Forte de São João, founded in 1565, marks the exact point where the city of Rio de Janeiro began. In January 1502, Portuguese navigators mistook Guanabara Bay for a river mouth. The geographical error became a name.',
+    a1q:'"It is not enough to show places. You must reveal what lies behind them."',
+    a1e4:'The Claudio Coutinho Trail is not just a path. It is a reminder. It is not about reaching the destination — it is about learning to see the journey.',
+    a2t:'The "invisible triangle" of Rio: myth or the greatest missed opportunity in Brazilian tourism?',
+    a2p:"Not every story needs to be real to transform how a destination is experienced. There's a curious tale about Christ the Redeemer, Sugarloaf Mountain and Pedra da Gávea.",
+    a2e1:'Some say these three landmarks form a symbolic triangle over the city. There is no scientific proof — but stories like this have the power to completely transform how a place is perceived.',
+    a2e2:'After years at Bondinho do Pão de Açúcar, one thing became clear: visitors do not just want to see a destination. They want to feel they are living something unique.',
+    a2q:'"Countries around the world do not just sell places. They build meaning."',
+    a2e3:'In Brazil, we still treat these narratives as curiosities — when they could be strategic tools. In modern tourism, it is not the most beautiful scenery that wins. It is the one that gives meaning to what visitors see.',
+    a3t:'I worked 9 years at Bondinho do Pão de Açúcar — and that is where I understood why Brazilian tourism does not evolve as it could',
+    a3p:'The landscape impresses. The experience, not always. During that time, I watched the same scene repeat every day: visitors arrived enchanted, went up, admired the view... and left.',
+    a3e1:'The experience was beautiful — but shallow. It lacked guidance, narrative, intention. Christ the Redeemer and Sugarloaf are surrounded by stories that could completely transform the journey.',
+    a3e2:'Visitors see. But they do not understand. They are enchanted. But they do not connect. Countries with fewer natural resources advance because they know how to transform territory into experience.',
+    a3q:'"Tourism is not just a destination. It is construction. It is a route. It is guided emotion."',
+    a3e3:'Brazil does not need to reinvent itself. It needs to organize itself. In the global arena, it is not the one with the most resources that wins — it is the one that best uses what it has.',
+    a4t:'Two Rio de Janeiros: the reality shock the city hides',
+    a4p:'Walking through the South Zone, crossing Ipanema and reaching Lagoa Rodrigo de Freitas, the impression is strong: there are two Rio de Janeiros inside the same city.',
+    a4e1:'On one side, full restaurants, comfortable lives and leisure. On the other, the Rio I serve at the CRAS social center in the North Zone: humble families from communities, fighting for basics.',
+    a4e2:'When I worked at Bondinho, we took underprivileged children from the favelas on tours. The look in their eyes when they saw Praia Vermelha from above was pure enchantment — many had never seen that view, even living a few kilometers away.',
+    a4q:'"The sparkle in their eyes revealed how unequal access to the city\'s beautiful spaces truly is."',
+    a4e3:"Perhaps it is time to build a tourism — and a city — that truly includes all its realities, not just the ones that appear in photographs.",
+    a5t:'Leblon: the neighborhood that already works — and what it teaches about the future of urban tourism',
+    a5p:'You walk along Rua Bartolomeu Mitre and notice: balanced movement, tourists mixed with locals, busy restaurants without chaos. Everything seems to work.',
+    a5e1:"It is not Rio's most instagrammable neighborhood — no Christ or Sugarloaf. But it delivers what modern tourism wants: fluid experience, perceived safety, local integration.",
+    a5e2:'Three years at the front desk of Apart Hotel Monsieur Leblond: I watched tourists walk more, explore without rushing and return. The difference? A sense of control, not just infrastructure.',
+    a5q:'"It does not create tourist spots — it creates environments where people want to stay."',
+    a5e3:'The future of tourism: trust and fluidity, not crowds. How many "Leblons" in your city have yet to become tourism assets?',
+    navPrev:'Previous', navNext:'Next',
+    navNames:['Home','About','Numbers','Curiosities','Articles'],
+    readMore:'Read more →', close:'Close ↑'
+  }
+};
 
 function goTo(i){i=Math.max(0,Math.min(sections.length-1,i));cur=i;document.getElementById(sections[i]).scrollIntoView({behavior:'smooth'});updateNav();}
-function navPrev(){goTo(cur-1)}
+function navPrev(){goTo(cur-1)} 
 function navNext(){goTo(cur+1)}
 function updateNav(){
-  document.getElementById('nl').textContent=names[cur];
+  const d=T[lang];
+  document.getElementById('nl').textContent=d.navNames[cur];
+  document.getElementById('nav-prev').textContent=d.navPrev;
+  document.getElementById('nav-next').textContent=d.navNext;
   document.getElementById('nbp').disabled=cur===0;
   document.getElementById('nbn').disabled=cur===sections.length-1;
 }
-function toggle(id,btn){
-  const el=document.getElementById(id);
+
+function toggle(eid,bid){
+  const el=document.getElementById(eid);
+  const btn=document.getElementById(bid);
   el.classList.toggle('open');
-  btn.textContent=el.classList.contains('open')?'Fechar ↑':'Ler mais →';
+  btn.textContent=el.classList.contains('open')?T[lang].close:T[lang].readMore;
 }
+
+function setLang(l){
+  lang=l;
+  const d=T[l];
+  document.querySelectorAll('.lang button').forEach(b=>b.classList.remove('on'));
+  document.querySelector(`.lang button[onclick="setLang('${l}')"]`).classList.add('on');
+  // update all text fields
+  Object.keys(d).forEach(k=>{
+    if(['navPrev','navNext','navNames','readMore','close'].includes(k)) return;
+    const el=document.getElementById(k);
+    if(!el) return;
+    if(k==='hero-title') el.innerHTML=d[k];
+    else if(k==='sobre-quote') el.textContent=d[k];
+    else el.textContent=d[k];
+  });
+  // update all open/close buttons
+  document.querySelectorAll('.artigo-btn').forEach(btn=>{
+    const eid=btn.getAttribute('onclick').match(/'([^']+)'/)[1];
+    const el=document.getElementById(eid);
+    btn.textContent=el&&el.classList.contains('open')?d.close:d.readMore;
+  });
+  updateNav();
+}
+
 window.addEventListener('scroll',()=>{
   let active=0;
   sections.forEach((id,i)=>{const el=document.getElementById(id);if(el&&el.getBoundingClientRect().top<=120)active=i;});
   cur=active;updateNav();
   document.getElementById('hdr').style.background=window.scrollY>30?'rgba(15,42,35,.9)':'rgba(15,42,35,.7)';
 });
+
 const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 updateNav();
