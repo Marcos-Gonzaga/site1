@@ -10,13 +10,9 @@
 html{scroll-behavior:smooth}
 body{background:#0F2A23;color:#F5F5F5;font-family:'Jost',Georgia,serif;overflow-x:hidden}
 ::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:#C8A85D55}
-
-/* BG */
 .bg{position:fixed;inset:0;z-index:0;pointer-events:none;
 background:radial-gradient(ellipse 80% 60% at 15% 20%,rgba(30,61,52,.8),transparent 65%),
 radial-gradient(ellipse 60% 70% at 85% 75%,rgba(42,82,68,.5),transparent 60%),#0F2A23}
-
-/* HEADER */
 header{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 28px;
 display:flex;align-items:center;justify-content:space-between;
 backdrop-filter:blur(14px);background:rgba(15,42,35,.7);
@@ -28,70 +24,41 @@ border-bottom:1px solid rgba(200,168,93,.15);transition:all .4s}
 .logo-olhar{font-size:10px;letter-spacing:.5em;color:#C8A85D;text-transform:uppercase;font-weight:200}
 .logo-nome{font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:600;color:#F5F5F5;line-height:1}
 .lang{display:flex;background:rgba(255,255,255,.06);border:1px solid rgba(200,168,93,.22);border-radius:40px;padding:3px;gap:2px}
-.lang button{background:none;border:none;border-radius:40px;font-size:11px;letter-spacing:.12em;
-padding:5px 15px;cursor:pointer;transition:all .25s;text-transform:uppercase;color:#CFCFCF}
+.lang button{background:none;border:none;border-radius:40px;font-size:11px;letter-spacing:.12em;padding:5px 15px;cursor:pointer;transition:all .25s;text-transform:uppercase;color:#CFCFCF}
 .lang button.on{background:#C8A85D;color:#0F2A23;font-weight:600}
-
-/* HERO */
-.hero{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;
-align-items:center;justify-content:center;text-align:center;padding:120px 24px 100px}
-.eyebrow{font-size:11px;letter-spacing:.4em;color:#C8A85D;text-transform:uppercase;
-margin-bottom:44px;animation:fadeUp .9s ease .2s both}
+.hero{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 24px 100px}
+.eyebrow{font-size:11px;letter-spacing:.4em;color:#C8A85D;text-transform:uppercase;margin-bottom:44px;animation:fadeUp .9s ease .2s both}
 .eyebrow span{opacity:.4;margin:0 6px}
-h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;
-font-size:clamp(48px,10vw,108px);line-height:1;color:#F5F5F5;margin-bottom:12px;
-animation:fadeUp .9s ease .45s both}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(48px,10vw,108px);line-height:1;color:#F5F5F5;margin-bottom:12px;animation:fadeUp .9s ease .45s both}
 h1 em{color:#E2C98A;font-style:italic}
-.sub{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;
-font-size:clamp(16px,2.8vw,24px);color:#CFCFCF;max-width:500px;
-margin-bottom:52px;animation:fadeUp .9s ease .65s both}
-.ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;
-animation:fadeUp .9s ease .85s both;margin-bottom:60px}
-.btn-gold{background:#C8A85D;color:#0F2A23;border:none;
-font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
-padding:15px 36px;cursor:pointer;
-clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);transition:all .3s}
+.sub{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(16px,2.8vw,24px);color:#CFCFCF;max-width:500px;margin-bottom:52px;animation:fadeUp .9s ease .65s both}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;animation:fadeUp .9s ease .85s both;margin-bottom:60px}
+.btn-gold{background:#C8A85D;color:#0F2A23;border:none;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;padding:15px 36px;cursor:pointer;clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);transition:all .3s}
 .btn-gold:hover{background:#E2C98A}
-.btn-out{background:transparent;color:#F5F5F5;
-border:1px solid rgba(245,245,245,.25);font-size:12px;font-weight:400;
-letter-spacing:.22em;text-transform:uppercase;padding:14px 36px;cursor:pointer;transition:all .3s}
+.btn-out{background:transparent;color:#F5F5F5;border:1px solid rgba(245,245,245,.25);font-size:12px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;padding:14px 36px;cursor:pointer;transition:all .3s}
 .btn-out:hover{border-color:#C8A85D;color:#C8A85D}
 .scroll-ind{display:flex;flex-direction:column;align-items:center;gap:8px;animation:fadeUp .9s ease 1.1s both}
 .scroll-line{width:1px;height:46px;background:linear-gradient(#C8A85D,transparent);animation:pulse 2.2s ease-in-out infinite}
 .scroll-lbl{font-size:9px;letter-spacing:.4em;color:#C8A85D;text-transform:uppercase}
 @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
-
-/* DIVIDER */
 .divider{display:flex;align-items:center;gap:20px;padding:0 40px;max-width:880px;margin:0 auto}
 .div-line{flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(200,168,93,.3),transparent)}
 .div-diamond{width:6px;height:6px;background:#C8A85D;transform:rotate(45deg);flex-shrink:0}
-
-/* SECTIONS */
 section{position:relative;z-index:1;padding:110px 32px;max-width:920px;margin:0 auto}
 .sec-label{font-size:10px;letter-spacing:.45em;color:#C8A85D;text-transform:uppercase;margin-bottom:20px}
 .sec-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(30px,5vw,50px);font-weight:300;color:#F5F5F5;font-style:italic;text-align:center}
-
-/* SOBRE */
 .sobre-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:72px;align-items:center}
-blockquote{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;
-font-size:clamp(24px,3.5vw,38px);font-weight:300;line-height:1.4;color:#F5F5F5;
-border-left:2px solid #C8A85D;padding-left:26px;white-space:pre-line}
+blockquote{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(24px,3.5vw,38px);font-weight:300;line-height:1.4;color:#F5F5F5;border-left:2px solid #C8A85D;padding-left:26px;white-space:pre-line}
 .assinatura{display:flex;align-items:center;gap:16px;margin-top:28px}
 .assinatura-line{width:36px;height:1px;background:#C8A85D}
 .assinatura-nome{font-family:'Cormorant Garamond',Georgia,serif;font-size:14px;color:#C8A85D}
 .sobre-texto{font-size:14px;line-height:1.95;color:#CFCFCF;font-weight:300}
 .sobre-texto p+p{margin-top:16px}
-
-/* STATS */
-.stats-sec{background:rgba(30,61,52,.3);border-top:1px solid rgba(200,168,93,.1);
-border-bottom:1px solid rgba(200,168,93,.1);padding:80px 32px;position:relative;z-index:1}
+.stats-sec{background:rgba(30,61,52,.3);border-top:1px solid rgba(200,168,93,.1);border-bottom:1px solid rgba(200,168,93,.1);padding:80px 32px;position:relative;z-index:1}
 .stats-inner{max-width:800px;margin:0 auto;display:flex;justify-content:space-around;align-items:center;gap:28px;flex-wrap:wrap}
 .stat-num{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(54px,8vw,86px);font-weight:300;color:#C8A85D;display:block;line-height:1}
 .stat-lbl{font-size:10px;letter-spacing:.38em;color:#8A9A95;text-transform:uppercase;margin-top:8px}
 .stat-div{width:1px;height:60px;background:rgba(200,168,93,.2)}
-
-/* CARDS */
-.cards-sec{max-width:1060px}
 .cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
 .card{background:rgba(30,61,52,.4);border:1px solid rgba(200,168,93,.1);padding:44px 32px;transition:all .4s;cursor:default}
 .card:hover{background:rgba(42,82,68,.55);border-color:rgba(200,168,93,.35);transform:translateY(-5px)}
@@ -100,77 +67,70 @@ border-bottom:1px solid rgba(200,168,93,.1);padding:80px 32px;position:relative;
 .card-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:400;color:#C8A85D;margin-bottom:12px;line-height:1.25}
 .card-text{font-size:13px;line-height:1.85;color:#8A9A95;font-weight:300}
 
-/* NAV BOTTOM */
-.nav-bottom{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:200;
-display:flex;align-items:center;gap:10px}
-.nav-btn{display:flex;align-items:center;gap:8px;
-background:rgba(15,42,35,.88);border:1px solid rgba(200,168,93,.3);
-font-size:11px;letter-spacing:.15em;text-transform:uppercase;
-padding:10px 20px;cursor:pointer;color:#F5F5F5;transition:all .25s;backdrop-filter:blur(12px)}
+/* ARTIGOS */
+.artigos-grid{display:flex;flex-direction:column;gap:3px}
+.artigo-card{background:rgba(30,61,52,.4);border:1px solid rgba(200,168,93,.12);padding:48px 44px;transition:all .4s;position:relative;overflow:hidden}
+.artigo-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:#C8A85D}
+.artigo-card:hover{background:rgba(42,82,68,.5);border-color:rgba(200,168,93,.3);transform:translateX(4px)}
+.artigo-data{font-size:10px;letter-spacing:.3em;color:#8A9A95;text-transform:uppercase;margin-bottom:12px}
+.artigo-titulo{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(20px,2.8vw,28px);font-weight:400;color:#C8A85D;margin-bottom:18px;line-height:1.3}
+.artigo-preview{font-size:14px;line-height:1.85;color:#CFCFCF;font-weight:300}
+.artigo-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(200,168,93,.1);border:1px solid rgba(200,168,93,.25);padding:4px 14px;font-size:10px;letter-spacing:.2em;color:#C8A85D;text-transform:uppercase;margin-bottom:16px;margin-right:6px}
+.artigo-expandido{display:none;margin-top:24px;font-size:14px;line-height:1.9;color:#CFCFCF}
+.artigo-expandido p{margin-bottom:14px}
+.artigo-expandido.open{display:block}
+.artigo-btn{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C8A85D;background:none;border:1px solid rgba(200,168,93,.3);padding:8px 20px;cursor:pointer;transition:all .3s}
+.artigo-btn:hover{background:rgba(200,168,93,.1)}
+.artigo-autor{display:flex;align-items:center;gap:14px;margin-top:28px;padding-top:20px;border-top:1px solid rgba(200,168,93,.15)}
+.artigo-autor-line{width:30px;height:1px;background:#C8A85D}
+.artigo-autor-nome{font-family:'Cormorant Garamond',Georgia,serif;font-size:14px;color:#C8A85D;font-style:italic}
+.destaque{color:#C8A85D;font-weight:500}
+.cita{font-style:italic;color:#C8A85D;font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;border-left:2px solid #C8A85D;padding-left:16px;margin:20px 0;display:block}
+
+.nav-bottom{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:200;display:flex;align-items:center;gap:10px}
+.nav-btn{display:flex;align-items:center;gap:8px;background:rgba(15,42,35,.88);border:1px solid rgba(200,168,93,.3);font-size:11px;letter-spacing:.15em;text-transform:uppercase;padding:10px 20px;cursor:pointer;color:#F5F5F5;transition:all .25s;backdrop-filter:blur(12px)}
 .nav-btn:hover{border-color:#C8A85D;color:#C8A85D}
 .nav-btn:disabled{opacity:.3;cursor:default}
-.nav-label{background:rgba(15,42,35,.88);border:1px solid rgba(200,168,93,.2);
-backdrop-filter:blur(12px);padding:10px 18px;
-font-family:'Cormorant Garamond',Georgia,serif;font-size:13px;color:#C8A85D;white-space:nowrap}
-
-/* FOOTER */
-footer{position:relative;z-index:1;max-width:880px;margin:0 auto;
-padding:48px 32px 100px;display:flex;align-items:center;
-justify-content:space-between;flex-wrap:wrap;gap:20px;
-border-top:1px solid rgba(200,168,93,.1)}
+.nav-label{background:rgba(15,42,35,.88);border:1px solid rgba(200,168,93,.2);backdrop-filter:blur(12px);padding:10px 18px;font-family:'Cormorant Garamond',Georgia,serif;font-size:13px;color:#C8A85D;white-space:nowrap}
+footer{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:48px 32px 100px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;border-top:1px solid rgba(200,168,93,.1)}
 .footer-logo{font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;color:#C8A85D}
 .footer-links{display:flex;gap:22px}
 .footer-links a{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:#8A9A95;text-decoration:none;transition:color .3s}
 .footer-links a:hover{color:#C8A85D}
 .footer-copy{font-size:11px;color:#8A9A95}
-
-/* REVEAL */
 .reveal{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s ease}
 .reveal.on{opacity:1;transform:translateY(0)}
-
-/* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
-
-/* MOBILE */
 @media(max-width:768px){
   .sobre-grid{grid-template-columns:1fr;gap:40px}
   .cards-grid{grid-template-columns:1fr}
   .stat-div{display:none}
+  .artigo-card{padding:32px 24px}
   footer{flex-direction:column;align-items:center;text-align:center}
 }
 </style>
 </head>
 <body>
 <div class="bg"></div>
-
-<!-- HEADER -->
 <header id="hdr">
   <div class="logo">
     <svg class="logo-svg" width="54" height="54" viewBox="0 0 120 120">
       <circle cx="60" cy="60" r="56" stroke="#C8A85D" stroke-width="1" stroke-dasharray="2 4" fill="none" opacity=".6"/>
       <circle cx="60" cy="60" r="48" stroke="#C8A85D" stroke-width=".7" fill="none" opacity=".3"/>
-      <!-- Ticks -->
       <line x1="60" y1="12" x2="60" y2="48" stroke="#C8A85D" stroke-width="1.5"/>
       <line x1="108" y1="60" x2="72" y2="60" stroke="#C8A85D" stroke-width="1.5"/>
       <line x1="60" y1="108" x2="60" y2="72" stroke="#C8A85D" stroke-width="1.5"/>
       <line x1="12" y1="60" x2="48" y2="60" stroke="#C8A85D" stroke-width="1.5"/>
-      <!-- Norte -->
       <polygon points="60,8 65,56 60,48 55,56" fill="#C8A85D"/>
-      <!-- Sul -->
       <polygon points="60,112 55,64 60,72 65,64" fill="rgba(200,168,93,.35)"/>
-      <!-- Leste -->
       <polygon points="112,60 64,55 72,60 64,65" fill="rgba(200,168,93,.5)"/>
-      <!-- Oeste -->
       <polygon points="8,60 56,65 48,60 56,55" fill="rgba(200,168,93,.3)"/>
-      <!-- Intercardinas -->
       <polygon points="95,25 68,54 66,48 72,46" fill="rgba(200,168,93,.45)"/>
       <polygon points="95,95 66,72 72,74 68,66" fill="rgba(200,168,93,.3)"/>
       <polygon points="25,95 54,66 48,72 46,68" fill="rgba(200,168,93,.3)"/>
       <polygon points="25,25 46,52 48,46 54,54" fill="rgba(200,168,93,.45)"/>
-      <!-- Centro -->
       <circle cx="60" cy="60" r="6" fill="#0F2A23" stroke="#C8A85D" stroke-width="1.5"/>
       <circle cx="60" cy="60" r="2.5" fill="#C8A85D"/>
-      <!-- Letras -->
       <text x="60" y="6" text-anchor="middle" fill="#C8A85D" font-size="10" font-family="Georgia,serif" font-weight="bold">N</text>
       <text x="60" y="118" text-anchor="middle" fill="rgba(200,168,93,.55)" font-size="8" font-family="Georgia,serif">S</text>
       <text x="116" y="64" text-anchor="middle" fill="rgba(200,168,93,.55)" font-size="8" font-family="Georgia,serif">L</text>
@@ -189,102 +149,182 @@ border-top:1px solid rgba(200,168,93,.1)}
 
 <!-- HERO -->
 <div class="hero" id="s0">
-  <p class="eyebrow" id="ey">Rio de Janeiro <span>·</span> Turismo <span>·</span> Tecnologia <span>·</span> Natureza</p>
-  <h1 id="tt">O Rio Que<br><em>Ninguém Te Contou</em></h1>
-  <p class="sub" id="sb">Histórias, roteiros e segredos de uma cidade que pulsa além do óbvio.</p>
+  <p class="eyebrow">Rio de Janeiro <span>·</span> Turismo <span>·</span> Tecnologia <span>·</span> Natureza</p>
+  <h1>O Rio Que<br><em>Ninguém Te Contou</em></h1>
+  <p class="sub">Histórias, roteiros e segredos de uma cidade que pulsa além do óbvio.</p>
   <div class="ctas">
-    <button class="btn-gold" onclick="goTo(2)" id="b1">↳ Explorar Roteiros</button>
-    <button class="btn-out" onclick="goTo(3)" id="b2">Ver Vídeos</button>
+    <button class="btn-gold" onclick="goTo(2)">↳ Explorar Roteiros</button>
+    <button class="btn-out" onclick="goTo(4)">Ver Artigos</button>
   </div>
-  <div class="scroll-ind">
-    <div class="scroll-line"></div>
-    <span class="scroll-lbl">scroll</span>
-  </div>
+  <div class="scroll-ind"><div class="scroll-line"></div><span class="scroll-lbl">scroll</span></div>
 </div>
 
-<!-- DIVIDER -->
 <div class="divider reveal"><div class="div-line"></div><div class="div-diamond"></div><div class="div-line"></div></div>
 
 <!-- SOBRE -->
 <section id="s1">
   <div class="sobre-grid">
     <div class="reveal">
-      <p class="sec-label" id="al">Sobre o Olhar</p>
-      <blockquote id="aq">"Turismo é ciência.
+      <p class="sec-label">Sobre o Olhar</p>
+      <blockquote>"Turismo é ciência.
 Também é paixão."</blockquote>
-      <div class="assinatura">
-        <div class="assinatura-line"></div>
-        <span class="assinatura-nome">Marcos Aurelio T. Gonzaga</span>
-      </div>
+      <div class="assinatura"><div class="assinatura-line"></div><span class="assinatura-nome">Marcos Aurelio T. Gonzaga</span></div>
     </div>
     <div class="reveal" style="transition-delay:.2s">
-      <p class="sec-label" id="ar">Turismólogo · Rio de Janeiro</p>
+      <p class="sec-label">Turismólogo · Rio de Janeiro</p>
       <div class="sobre-texto">
-        <p id="ap1">Sou turismólogo formado com passagem pelo Bondinho do Pão de Açúcar, na Urca — um dos lugares mais simbólicos do Rio. Mas meu olhar vai além dos cartões-postais.</p>
-        <p id="ap2" style="margin-top:16px">Neste canal, educação em turismo e tecnologia se unem para revelar o Rio que os guias não contam: a história viva dos bairros e os roteiros que surpreendem.</p>
+        <p>Sou turismólogo formado com passagem pelo Bondinho do Pão de Açúcar, na Urca — um dos lugares mais simbólicos do Rio. Mas meu olhar vai além dos cartões-postais.</p>
+        <p>Neste canal, educação em turismo e tecnologia se unem para revelar o Rio que os guias não contam: a história viva dos bairros e os roteiros que surpreendem.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- DIVIDER -->
 <div class="divider reveal"><div class="div-line"></div><div class="div-diamond"></div><div class="div-line"></div></div>
 
 <!-- STATS -->
 <div class="stats-sec" id="s2">
   <div class="stats-inner">
-    <div class="reveal" style="text-align:center">
-      <span class="stat-num">+50</span>
-      <div class="stat-lbl" id="sl1">Roteiros</div>
-    </div>
+    <div class="reveal" style="text-align:center"><span class="stat-num">+50</span><div class="stat-lbl">Roteiros</div></div>
     <div class="stat-div"></div>
-    <div class="reveal" style="text-align:center;transition-delay:.15s">
-      <span class="stat-num">3</span>
-      <div class="stat-lbl" id="sl2">Plataformas</div>
-    </div>
+    <div class="reveal" style="text-align:center;transition-delay:.15s"><span class="stat-num">3</span><div class="stat-lbl">Plataformas</div></div>
     <div class="stat-div"></div>
-    <div class="reveal" style="text-align:center;transition-delay:.3s">
-      <span class="stat-num">∞</span>
-      <div class="stat-lbl" id="sl3">Amor pelo Rio</div>
-    </div>
+    <div class="reveal" style="text-align:center;transition-delay:.3s"><span class="stat-num">∞</span><div class="stat-lbl">Amor pelo Rio</div></div>
   </div>
 </div>
 
-<!-- DIVIDER -->
 <div class="divider reveal"><div class="div-line"></div><div class="div-diamond"></div><div class="div-line"></div></div>
 
 <!-- CURIOSIDADES -->
-<section class="cards-sec" id="s3" style="max-width:1060px">
+<section id="s3" style="max-width:1060px">
   <div class="reveal" style="text-align:center;margin-bottom:60px">
-    <p class="sec-label" id="cl">Lugares que Contam Histórias</p>
-    <h2 class="sec-title" id="ct">Curiosidades do Rio</h2>
+    <p class="sec-label">Lugares que Contam Histórias</p>
+    <h2 class="sec-title">Curiosidades do Rio</h2>
   </div>
   <div class="cards-grid">
     <div class="card reveal">
-      <div class="card-num">01</div>
-      <div class="card-icon">🌊</div>
-      <h3 class="card-title" id="c1t">Aterro do Flamengo</h3>
-      <p class="card-text" id="c1x">O maior parque urbano do Brasil foi construído sobre aterro na Baía de Guanabara. Projeto de Burle Marx, guarda décadas de história política e cultural carioca.</p>
+      <div class="card-num">01</div><div class="card-icon">🌊</div>
+      <h3 class="card-title">Aterro do Flamengo</h3>
+      <p class="card-text">O maior parque urbano do Brasil foi construído sobre aterro na Baía de Guanabara. Projeto de Burle Marx, guarda décadas de história política e cultural carioca.</p>
     </div>
     <div class="card reveal" style="transition-delay:.15s">
-      <div class="card-num">02</div>
-      <div class="card-icon">🌿</div>
-      <h3 class="card-title" id="c2t">Floresta da Tijuca</h3>
-      <p class="card-text" id="c2x">A maior floresta urbana do mundo foi replantada no séc. XIX — pioneirismo em reflorestamento muito antes do conceito existir formalmente.</p>
+      <div class="card-num">02</div><div class="card-icon">🌿</div>
+      <h3 class="card-title">Floresta da Tijuca</h3>
+      <p class="card-text">A maior floresta urbana do mundo foi replantada no séc. XIX — pioneirismo em reflorestamento muito antes do conceito existir formalmente.</p>
     </div>
     <div class="card reveal" style="transition-delay:.3s">
-      <div class="card-num">03</div>
-      <div class="card-icon">⚓</div>
-      <h3 class="card-title" id="c3t">Urca</h3>
-      <p class="card-text" id="c3x">O bairro mais tranquilo do Rio esconde segredos militares, trilhas secretas e uma orla que poucos conhecem. O Pão de Açúcar é só a porta de entrada.</p>
+      <div class="card-num">03</div><div class="card-icon">⚓</div>
+      <h3 class="card-title">Urca</h3>
+      <p class="card-text">O bairro mais tranquilo do Rio esconde segredos militares, trilhas secretas e uma orla que poucos conhecem. O Pão de Açúcar é só a porta de entrada.</p>
     </div>
   </div>
 </section>
 
-<!-- DIVIDER -->
 <div class="divider reveal"><div class="div-line"></div><div class="div-diamond"></div><div class="div-line"></div></div>
 
-<!-- FOOTER -->
+<!-- ARTIGOS -->
+<section id="s4" style="max-width:860px">
+  <div class="reveal" style="text-align:center;margin-bottom:60px">
+    <p class="sec-label">Conteúdo & Reflexões</p>
+    <h2 class="sec-title">Artigos</h2>
+  </div>
+  <div class="artigos-grid">
+
+    <!-- ARTIGO 1 -->
+    <div class="artigo-card reveal">
+      <span class="artigo-tag">🥾 Trilha</span><span class="artigo-tag">⚓ Urca</span><span class="artigo-tag">📜 História</span>
+      <div class="artigo-data">1 de maio de 2026</div>
+      <h2 class="artigo-titulo">A trilha que revela um Rio que poucos enxergam — e as histórias escondidas em cada passo</h2>
+      <p class="artigo-preview">Existe um Rio de Janeiro que não aparece nos cartões-postais. Ele se revela nos caminhos silenciosos, onde história, natureza e emoção se entrelaçam. Foi isso que descobri ao percorrer a Trilha Claudio Coutinho.</p>
+      <div class="artigo-expandido" id="a1">
+        <p>Localizada entre a Praia Vermelha e o Morro da Urca, essa trilha de aproximadamente 1,25 km (ida) parece simples à primeira vista — mas carrega séculos de história em cada metro.</p>
+        <p>Logo no início, um detalhe que poucos percebem: o nome "Praia Vermelha" não é por acaso. Ele vem da coloração avermelhada das rochas ricas em óxido de ferro e também de micro-organismos marinhos que tingem a água — um fenômeno raro e fascinante.</p>
+        <p>A Urca é uma área de cerca de 2 km² que precisou ser parcialmente aterrada para existir como conhecemos hoje — um pedaço de terra conquistado entre o mar e as montanhas.</p>
+        <p>E é impossível ignorar a presença do <span class="destaque">Forte de São João</span>. Fundado em 1565, ele marca o ponto exato onde a cidade do Rio de Janeiro começou.</p>
+        <p>Em janeiro de 1502, navegadores portugueses avistaram a entrada da Baía de Guanabara e acreditaram estar diante da foz de um grande rio. O erro geográfico virou nome — e entrou para a história.</p>
+        <span class="cita">"Não basta mostrar lugares. É preciso revelar o que está por trás deles."</span>
+        <p>A Trilha Claudio Coutinho não é só um percurso. É um lembrete. No fim, não é sobre chegar ao destino. É sobre aprender a enxergar o caminho.</p>
+      </div>
+      <button class="artigo-btn" onclick="toggle('a1',this)">Ler mais →</button>
+      <div class="artigo-autor"><div class="artigo-autor-line"></div><span class="artigo-autor-nome">Marcos Gonzaga — Turismólogo e Analista de Sistemas</span></div>
+    </div>
+
+    <!-- ARTIGO 2 -->
+    <div class="artigo-card reveal" style="transition-delay:.1s">
+      <span class="artigo-tag">🔺 Mito</span><span class="artigo-tag">🏙️ Turismo Estratégico</span>
+      <div class="artigo-data">23 de abril de 2026</div>
+      <h2 class="artigo-titulo">O "triângulo invisível" do Rio: mito ou a maior oportunidade perdida do turismo brasileiro?</h2>
+      <p class="artigo-preview">Nem toda história precisa ser real para transformar a forma como um destino é vivido. Existe uma história curiosa sobre o Cristo Redentor, o Pão de Açúcar e a Pedra da Gávea...</p>
+      <div class="artigo-expandido" id="a2">
+        <p>Alguns dizem que esses três pontos formam um triângulo simbólico sobre a cidade. Uma espécie de campo de proteção. Um alinhamento que carrega significado além da paisagem. Não há comprovação científica — mas o ponto mais interessante não é esse.</p>
+        <p>É o fato de que histórias como essa têm o poder de transformar completamente a forma como um lugar é percebido.</p>
+        <p>Durante anos trabalhando no Bondinho do Pão de Açúcar, algo ficou claro: o visitante não busca apenas ver um destino. Ele busca sentir que está vivendo algo único.</p>
+        <p>O Rio de Janeiro não é apenas um conjunto de pontos turísticos isolados. É um território cheio de camadas: históricas, culturais, simbólicas e até imaginativas. Mas essas camadas raramente são integradas à experiência.</p>
+        <span class="cita">"Países ao redor do mundo não vendem apenas lugares. Eles constroem significados."</span>
+        <p>No Brasil, ainda tratamos muitas dessas narrativas como curiosidade — quando poderiam ser ferramentas estratégicas. No turismo moderno, não vence quem tem apenas o cenário mais bonito. Vence quem sabe dar sentido ao que o visitante vê.</p>
+      </div>
+      <button class="artigo-btn" onclick="toggle('a2',this)">Ler mais →</button>
+      <div class="artigo-autor"><div class="artigo-autor-line"></div><span class="artigo-autor-nome">Marcos Gonzaga — Turismólogo e Analista de Sistemas</span></div>
+    </div>
+
+    <!-- ARTIGO 3 -->
+    <div class="artigo-card reveal" style="transition-delay:.2s">
+      <span class="artigo-tag">🚡 Bondinho</span><span class="artigo-tag">💡 Experiência</span>
+      <div class="artigo-data">23 de abril de 2026</div>
+      <h2 class="artigo-titulo">Trabalhei 9 anos no Bondinho do Pão de Açúcar — e foi ali que entendi por que o turismo no Brasil não evolui como poderia</h2>
+      <p class="artigo-preview">A paisagem impressiona. A experiência, nem sempre. Durante esse tempo, eu vi a mesma cena se repetir todos os dias: o visitante chegava encantado, subia, admirava... e ia embora. Faltava algo.</p>
+      <div class="artigo-expandido" id="a3">
+        <p>A experiência era bonita — mas muitas vezes superficial. Faltava condução. Faltava narrativa. Faltava intenção.</p>
+        <p>Pouca gente percebe como o Cristo Redentor, o próprio Pão de Açúcar e a Pedra da Gávea estão cercados por histórias, simbolismos e narrativas culturais que poderiam transformar completamente esse percurso.</p>
+        <p>O visitante vê. Mas não entende. Se encanta. Mas não se conecta.</p>
+        <p>Enquanto isso, países com menos recursos naturais avançam com consistência. Não porque têm mais atrativos. Mas porque sabem transformar território em experiência.</p>
+        <span class="cita">"Turismo não é só destino. É construção. É roteiro. É emoção guiada."</span>
+        <p>O Brasil não precisa se reinventar. Precisa se organizar. Porque no cenário global atual, não vence quem tem mais recursos. Vence quem sabe usar melhor o que tem.</p>
+      </div>
+      <button class="artigo-btn" onclick="toggle('a3',this)">Ler mais →</button>
+      <div class="artigo-autor"><div class="artigo-autor-line"></div><span class="artigo-autor-nome">Marcos Gonzaga — Turismólogo e Analista de Sistemas</span></div>
+    </div>
+
+    <!-- ARTIGO 4 -->
+    <div class="artigo-card reveal" style="transition-delay:.3s">
+      <span class="artigo-tag">🌆 Dois Rios</span><span class="artigo-tag">❤️ Social</span>
+      <div class="artigo-data">2026</div>
+      <h2 class="artigo-titulo">Dois Rios de Janeiro: o choque de realidade que a cidade esconde</h2>
+      <p class="artigo-preview">Caminhando pela Zona Sul, depois de atravessar as ruas de Ipanema e chegar à Lagoa Rodrigo de Freitas, a impressão é forte: são dois Rios de Janeiro dentro da mesma cidade.</p>
+      <div class="artigo-expandido" id="a4">
+        <p>De um lado, gente bem vestida caminhando ou correndo, restaurantes cheios, vida de conforto e lazer. Do outro, o Rio que eu atendo no CRAS, na Zona Norte: famílias humildes das comunidades, lutando pelo básico.</p>
+        <p>Trabalhei anos na Zona Sul — hotéis em Copacabana, Leblon, Recreio e Urca, inclusive no Bondinho do Pão de Açúcar. O luxo ali parecia normal. Mas quando comecei a trabalhar com o público do CRAS, o contraste bateu forte.</p>
+        <p>Quando eu trabalhava no bondinho, levávamos crianças carentes dos morros para passear. O olhar delas ao subir e ver a Praia Vermelha do alto era de puro encantamento. Muitas nunca tinham visto aquela vista de perto, mesmo morando a poucos quilômetros.</p>
+        <span class="cita">"O brilho nos olhos mostrava o quanto aquela experiência era mágica — e revelava como o acesso aos espaços bonitos da cidade é desigual."</span>
+        <p>O turismo, que impulsiona a economia carioca, muitas vezes não chega de forma justa para quem mais precisa. Talvez seja hora de construir um turismo e uma cidade que inclua de verdade todas as suas realidades.</p>
+      </div>
+      <button class="artigo-btn" onclick="toggle('a4',this)">Ler mais →</button>
+      <div class="artigo-autor"><div class="artigo-autor-line"></div><span class="artigo-autor-nome">Marcos Gonzaga — Turismólogo e Analista de Sistemas</span></div>
+    </div>
+
+    <!-- ARTIGO 5 -->
+    <div class="artigo-card reveal" style="transition-delay:.4s">
+      <span class="artigo-tag">🏖️ Leblon</span><span class="artigo-tag">🏙️ Turismo Urbano</span>
+      <div class="artigo-data">2026</div>
+      <h2 class="artigo-titulo">Leblon: o bairro que já funciona — e o que ele ensina sobre o futuro do turismo urbano</h2>
+      <p class="artigo-preview">Você caminha pela Rua Bartolomeu Mitre, no Leblon, e percebe: movimento equilibrado. Turistas misturados a moradores, calçadas limpas, restaurantes lotados sem caos. Tudo parece funcionar.</p>
+      <div class="artigo-expandido" id="a5">
+        <p>Não é o bairro mais "instagramável" do Rio — sem Cristo ou Pão de Açúcar. Mas seu trunfo é entregar o que o turismo moderno quer: experiência fluida, segurança percebida, integração local.</p>
+        <p>Três anos na recepção do Apart Hotel Monsieur Leblond: via turistas errarem rotas, gastarem mais — e mudarem quando o ambiente transmitia confiança. Caminhavam mais, exploravam sem pressa, consumiam melhor e voltavam.</p>
+        <p><span class="destaque">O que o Leblon acerta:</span> Escala humana — praia, cafés e serviços integrados. Segurança percebida. Economia distribuída entre restaurantes, galerias e padarias. Mobilidade simples.</p>
+        <p><span class="destaque">O que ainda falta:</span> Gentrificação e custo alto expulsam antigos moradores. Sazonalidade esvazia o bairro no inverno. Trânsito caótico no pico.</p>
+        <span class="cita">"Não cria pontos turísticos — cria ambientes onde as pessoas querem ficar."</span>
+        <p>Futuro do turismo: confiança e fluidez, não multidões. Leblon já faz — com falhas reais, mas potencial enorme. Quantos "Leblons" na sua cidade ainda não viraram ativos turísticos?</p>
+      </div>
+      <button class="artigo-btn" onclick="toggle('a5',this)">Ler mais →</button>
+      <div class="artigo-autor"><div class="artigo-autor-line"></div><span class="artigo-autor-nome">Marcos Gonzaga — Turismólogo e Analista de Sistemas</span></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider reveal"><div class="div-line"></div><div class="div-diamond"></div><div class="div-line"></div></div>
+
 <footer>
   <span class="footer-logo">Olhar Touristta</span>
   <div class="footer-links">
@@ -295,100 +335,38 @@ Também é paixão."</blockquote>
   <p class="footer-copy">© 2026 · Marcos Aurelio T. Gonzaga · Rio de Janeiro</p>
 </footer>
 
-<!-- NAV BOTTOM -->
 <div class="nav-bottom">
-  <button class="nav-btn" id="nbp" onclick="navPrev()">← <span id="np">Anterior</span></button>
+  <button class="nav-btn" id="nbp" onclick="navPrev()">← Anterior</button>
   <div class="nav-label" id="nl">Início</div>
-  <button class="nav-btn" id="nbn" onclick="navNext()">→ <span id="nn">Próximo</span></button>
+  <button class="nav-btn" id="nbn" onclick="navNext()">Próximo →</button>
 </div>
 
 <script>
-const sections = ['s0','s1','s2','s3'];
-const names = {pt:['Início','Sobre','Números','Curiosidades'],en:['Home','About','Numbers','Curiosities']};
-let lang = 'pt';
-let cur = 0;
+const sections=['s0','s1','s2','s3','s4'];
+const names=['Início','Sobre','Números','Curiosidades','Artigos'];
+let cur=0;
 
-function goTo(i){
-  i = Math.max(0,Math.min(sections.length-1,i));
-  cur = i;
-  document.getElementById(sections[i]).scrollIntoView({behavior:'smooth'});
-  updateNav();
-}
+function goTo(i){i=Math.max(0,Math.min(sections.length-1,i));cur=i;document.getElementById(sections[i]).scrollIntoView({behavior:'smooth'});updateNav();}
 function navPrev(){goTo(cur-1)}
 function navNext(){goTo(cur+1)}
-
 function updateNav(){
-  document.getElementById('nl').textContent = names[lang][cur];
-  document.getElementById('nbp').disabled = cur===0;
-  document.getElementById('nbn').disabled = cur===sections.length-1;
+  document.getElementById('nl').textContent=names[cur];
+  document.getElementById('nbp').disabled=cur===0;
+  document.getElementById('nbn').disabled=cur===sections.length-1;
 }
-
-// Detect active section on scroll
+function toggle(id,btn){
+  const el=document.getElementById(id);
+  el.classList.toggle('open');
+  btn.textContent=el.classList.contains('open')?'Fechar ↑':'Ler mais →';
+}
 window.addEventListener('scroll',()=>{
   let active=0;
-  sections.forEach((id,i)=>{
-    const el=document.getElementById(id);
-    if(el && el.getBoundingClientRect().top<=120) active=i;
-  });
-  cur=active;
-  updateNav();
-  // Header scroll effect
-  document.getElementById('hdr').style.background = window.scrollY>30?'rgba(15,42,35,.9)':'rgba(15,42,35,.7)';
+  sections.forEach((id,i)=>{const el=document.getElementById(id);if(el&&el.getBoundingClientRect().top<=120)active=i;});
+  cur=active;updateNav();
+  document.getElementById('hdr').style.background=window.scrollY>30?'rgba(15,42,35,.9)':'rgba(15,42,35,.7)';
 });
-
-// Reveal on scroll
-const obs = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('on'); });
-},{threshold:.12});
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-// Language
-const T = {
-  pt:{ey:'Rio de Janeiro · Turismo · Tecnologia · Natureza',
-    tt:'O Rio Que<br><em>Ninguém Te Contou</em>',
-    sb:'Histórias, roteiros e segredos de uma cidade que pulsa além do óbvio.',
-    b1:'↳ Explorar Roteiros',b2:'Ver Vídeos',
-    al:'Sobre o Olhar',aq:'"Turismo é ciência.\nTambém é paixão."',
-    ar:'Turismólogo · Rio de Janeiro',
-    ap1:'Sou turismólogo formado com passagem pelo Bondinho do Pão de Açúcar, na Urca — um dos lugares mais simbólicos do Rio. Mas meu olhar vai além dos cartões-postais.',
-    ap2:'Neste canal, educação em turismo e tecnologia se unem para revelar o Rio que os guias não contam: a história viva dos bairros e os roteiros que surpreendem.',
-    sl1:'Roteiros',sl2:'Plataformas',sl3:'Amor pelo Rio',
-    cl:'Lugares que Contam Histórias',ct:'Curiosidades do Rio',
-    c1t:'Aterro do Flamengo',c1x:'O maior parque urbano do Brasil foi construído sobre aterro na Baía de Guanabara. Projeto de Burle Marx, guarda décadas de história política e cultural carioca.',
-    c2t:'Floresta da Tijuca',c2x:'A maior floresta urbana do mundo foi replantada no séc. XIX — pioneirismo em reflorestamento muito antes do conceito existir formalmente.',
-    c3t:'Urca',c3x:'O bairro mais tranquilo do Rio esconde segredos militares, trilhas secretas e uma orla que poucos conhecem. O Pão de Açúcar é só a porta de entrada.',
-    np:'Anterior',nn:'Próximo'},
-  en:{ey:'Rio de Janeiro · Tourism · Technology · Nature',
-    tt:'The Rio<br><em>Nobody Told You About</em>',
-    sb:'Stories, routes and secrets of a city that pulses beyond the obvious.',
-    b1:'↳ Explore Routes',b2:'Watch Videos',
-    al:'About the Channel',aq:'"Tourism is science.\nAlso a passion."',
-    ar:'Tourism Expert · Rio de Janeiro',
-    ap1:"I'm a tourism professional with experience at Bondinho do Pão de Açúcar in Urca — one of Rio's most iconic landmarks. But my perspective goes far beyond postcards.",
-    ap2:"This channel blends tourism education and technology to reveal the Rio that guides don't tell you: living neighborhood histories and routes that truly surprise.",
-    sl1:'Routes',sl2:'Platforms',sl3:'Love for Rio',
-    cl:'Places That Tell Stories',ct:'Rio Curiosities',
-    c1t:'Flamengo Park',c1x:"Brazil's largest urban park was built on landfill in Guanabara Bay. Designed by Burle Marx, it hides decades of political and cultural history.",
-    c2t:'Tijuca Forest',c2x:"The world's largest urban forest was entirely replanted in the 19th century — pioneering reforestation long before the concept formally existed.",
-    c3t:'Urca',c3x:"Rio's quietest neighborhood hides military secrets, hidden trails and a waterfront few know. Sugarloaf Mountain is just the gateway.",
-    np:'Previous',nn:'Next'}
-};
-
-function setLang(l){
-  lang=l;
-  const d=T[l];
-  document.querySelectorAll('.lang button').forEach(b=>b.classList.remove('on'));
-  document.querySelector(`.lang button[onclick="setLang('${l}')"]`).classList.add('on');
-  Object.keys(d).forEach(k=>{
-    const el=document.getElementById(k);
-    if(!el) return;
-    if(k==='tt') el.innerHTML=d[k];
-    else if(k==='aq') el.textContent=d[k];
-    else el.textContent=d[k];
-  });
-  updateNav();
-}
-
 updateNav();
 </script>
 </body>
