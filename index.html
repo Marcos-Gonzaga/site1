@@ -413,11 +413,11 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
     Olhar Touristta
   </a>
   <ul class="nav-links">
-    <li><a href="#experiencias">Experiências</a></li>
-    <li><a href="#secreto">Rio Secreto</a></li>
-    <li><a href="#tecnologia">Tecnologia</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#blog">Blog</a></li>
+    <li><a href="#experiencias" data-i18n="nav_experiencias">Experiências</a></li>
+    <li><a href="#secreto" data-i18n="nav_secreto">Rio Secreto</a></li>
+    <li><a href="#tecnologia" data-i18n="nav_tecnologia">Tecnologia</a></li>
+    <li><a href="#sobre" data-i18n="nav_sobre">Sobre</a></li>
+    <li><a href="#blog" data-i18n="nav_blog">Blog</a></li>
     <li><a href="#contato" data-i18n="nav_contact">Contato</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:0.5rem;margin-left:1rem;">
@@ -434,19 +434,19 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
   <div class="particles" id="particles"></div>
   <div class="hero-cityscape"></div>
   <div class="hero-content">
-    <div class="hero-label">Rio de Janeiro · Turismo Inteligente · Experiências Únicas</div>
-    <h1 class="hero-title">
+    <div class="hero-label" data-i18n="hero_label">Rio de Janeiro · Turismo Inteligente · Experiências Únicas</div>
+    <h1 class="hero-title" data-i18n="hero_title">
       O RIO<br>
       <span class="accent">QUE NINGUÉM</span><br>
       <span class="italic">te contou.</span>
     </h1>
-    <p class="hero-sub">Histórias, roteiros e segredos de uma cidade<br>que pulsa além do óbvio.</p>
+    <p class="hero-sub" data-i18n="hero_sub">Histórias, roteiros e segredos de uma cidade<br>que pulsa além do óbvio.</p>
     <div class="hero-ctas">
-      <a href="#experiencias" class="btn-primary">
+      <a href="#experiencias" class="btn-primary" data-i18n="hero_btn1">
         Começar a Explorar
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>
       </a>
-      <a href="https://marcos-gonzaga.github.io/site1/" class="btn-secondary" target="_blank">Acessar App GPS</a>
+      <a href="https://marcos-gonzaga.github.io/site1/" class="btn-secondary" target="_blank" data-i18n="hero_btn2">Acessar App GPS</a>
     </div>
   </div>
   <div class="hero-scroll">
@@ -454,16 +454,16 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
     <span class="scroll-text">Scroll</span>
   </div>
   <div class="hero-stats">
-    <div class="stat-item"><div class="stat-num">+50</div><div class="stat-label">Roteiros</div></div>
-    <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">Experiências GPS</div></div>
-    <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Idiomas</div></div>
-    <div class="stat-item"><div class="stat-num">∞</div><div class="stat-label">Amor pelo Rio</div></div>
+    <div class="stat-item"><div class="stat-num">+50</div><div class="stat-label" data-i18n="hero_stat1_label">Roteiros</div></div>
+    <div class="stat-item"><div class="stat-num">5</div><div class="stat-label" data-i18n="hero_stat2_label">Experiências GPS</div></div>
+    <div class="stat-item"><div class="stat-num">3</div><div class="stat-label" data-i18n="hero_stat3_label">Idiomas</div></div>
+    <div class="stat-item"><div class="stat-num">∞</div><div class="stat-label" data-i18n="hero_stat4_label">Amor pelo Rio</div></div>
   </div>
 </section>
 
 <!-- ROSA DOS VENTOS 3D -->
 <section class="compass-section" id="compass-section">
-  <div class="section-label reveal" style="justify-content:center;margin-bottom:2rem;">Rosa dos Ventos · Olhar Touristta</div>
+  <div class="section-label reveal" style="justify-content:center;margin-bottom:2rem;" data-i18n="compass_label">Rosa dos Ventos · Olhar Touristta</div>
   <div class="compass-wrap reveal">
     <div class="compass-glow-ring"></div>
     <svg id="compass3d" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
@@ -626,8 +626,8 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
 <!-- EXPERIENCES -->
 <section class="experiences" id="experiencias">
   <div class="section-inner">
-    <div class="section-label reveal">Experiências GPS</div>
-    <h2 class="section-title reveal reveal-delay-1">Cinco lugares.<br><span class="serif">Infinitas histórias.</span></h2>
+    <div class="section-label reveal" data-i18n="exp_section_label">Experiências GPS</div>
+    <h2 class="section-title reveal reveal-delay-1" data-i18n="exp_section_title">Cinco lugares.<br><span class="serif">Infinitas histórias.</span></h2>
   </div>
   <div class="experiences-grid" style="margin-top:3rem;">
     <div class="exp-card featured reveal">
@@ -635,11 +635,11 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
       <div class="exp-overlay"></div>
       <div class="exp-num">01</div>
       <div class="exp-content">
-        <div class="exp-tag">Montanha · Mistério</div>
-        <div class="exp-name">PEDRA DA GÁVEA</div>
-        <div class="exp-desc">A rocha que guarda segredos de civilizações extintas. Fenício ou lenda? Você decide.</div>
-        <a class="exp-yt-btn" href="https://youtube.com/@olhartouristta" target="_blank">▶ Ouvir Narrativa</a>
-        <div class="exp-arrow">Explorar <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M0 5h11M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg></div>
+        <div class="exp-tag" data-i18n="exp1_tag">Montanha · Mistério</div>
+        <div class="exp-name" data-i18n="exp1_name">PEDRA DA GÁVEA</div>
+        <div class="exp-desc" data-i18n="exp1_desc">A rocha que guarda segredos de civilizações extintas. Fenício ou lenda? Você decide.</div>
+        <a class="exp-yt-btn" href="https://youtube.com/@olhartouristta" target="_blank" data-i18n="exp1_btn">▶ Ouvir Narrativa</a>
+        <div class="exp-arrow" data-i18n="exp1_arrow">Explorar <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M0 5h11M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg></div>
       </div>
     </div>
     <div class="exp-card reveal reveal-delay-1">
@@ -647,11 +647,11 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
       <div class="exp-overlay"></div>
       <div class="exp-num">02</div>
       <div class="exp-content">
-        <div class="exp-tag">Ícone · Espiritualidade</div>
-        <div class="exp-name">CRISTO REDENTOR</div>
-        <div class="exp-desc">Mais do que um monumento. Uma experiência de escala humana impossível de esquecer.</div>
-        <a class="exp-yt-btn" href="https://youtube.com/@olhartouristta" target="_blank">▶ Ouvir Narrativa</a>
-        <div class="exp-arrow">Explorar <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M0 5h11M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg></div>
+        <div class="exp-tag" data-i18n="exp2_tag">Ícone · Espiritualidade</div>
+        <div class="exp-name" data-i18n="exp2_name">CRISTO REDENTOR</div>
+        <div class="exp-desc" data-i18n="exp2_desc">Mais do que um monumento. Uma experiência de escala humana impossível de esquecer.</div>
+        <a class="exp-yt-btn" href="https://youtube.com/@olhartouristta" target="_blank" data-i18n="exp2_btn">▶ Ouvir Narrativa</a>
+        <div class="exp-arrow" data-i18n="exp2_arrow">Explorar <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M0 5h11M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg></div>
       </div>
     </div>
     <div class="exp-card reveal reveal-delay-2">
@@ -659,11 +659,11 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
       <div class="exp-overlay"></div>
       <div class="exp-num">03</div>
       <div class="exp-content">
-        <div class="exp-tag">Mar · Cultura</div>
-        <div class="exp-name">ARPOADOR</div>
-        <div class="exp-desc">Onde artistas, surfistas e sonhadores se encontram ao entardecer. O pôr do sol que une a cidade.</div>
-        <a class="exp-yt-btn" href="https://youtube.com/@olhartouristta" target="_blank">▶ Ouvir Narrativa</a>
-        <div class="exp-arrow">Explorar <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M0 5h11M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg></div>
+        <div class="exp-tag" data-i18n="exp3_tag">Mar · Cultura</div>
+        <div class="exp-name" data-i18n="exp3_name">ARPOADOR</div>
+        <div class="exp-desc" data-i18n="exp3_desc">Onde artistas, surfistas e sonhadores se encontram ao entardecer. O pôr do sol que une a cidade.</div>
+        <a class="exp-yt-btn" href="https://youtube.com/@olhartouristta" target="_blank" data-i18n="exp3_btn">▶ Ouvir Narrativa</a>
+        <div class="exp-arrow" data-i18n="exp3_arrow">Explorar <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M0 5h11M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg></div>
       </div>
     </div>
     <div class="exp-card reveal reveal-delay-1">
@@ -671,11 +671,11 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
       <div class="exp-overlay"></div>
       <div class="exp-num">04</div>
       <div class="exp-content">
-        <div class="exp-tag">Bairro · Arte</div>
-        <div class="exp-name">SANTA TERESA</div>
-        <div class="exp-desc">O bairro que recusou o século XXI. Bondes, escadarias, arte em cada parede.</div>
-        <a class="exp-yt-btn" href="https://youtube.com/@olhartouristta" target="_blank">▶ Ouvir Narrativa</a>
-        <div class="exp-arrow">Explorar <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M0 5h11M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg></div>
+        <div class="exp-tag" data-i18n="exp4_tag">Bairro · Arte</div>
+        <div class="exp-name" data-i18n="exp4_name">SANTA TERESA</div>
+        <div class="exp-desc" data-i18n="exp4_desc">O bairro que recusou o século XXI. Bondes, escadarias, arte em cada parede.</div>
+        <a class="exp-yt-btn" href="https://youtube.com/@olhartouristta" target="_blank" data-i18n="exp4_btn">▶ Ouvir Narrativa</a>
+        <div class="exp-arrow" data-i18n="exp4_arrow">Explorar <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M0 5h11M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg></div>
       </div>
     </div>
     <div class="exp-card reveal reveal-delay-2">
@@ -683,11 +683,11 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
       <div class="exp-overlay"></div>
       <div class="exp-num">05</div>
       <div class="exp-content">
-        <div class="exp-tag">Urca · Bondinho</div>
-        <div class="exp-name">PÃO DE AÇÚCAR</div>
-        <div class="exp-desc">A vista que faz qualquer pessoa entender porque o Rio é chamado de Cidade Maravilhosa.</div>
-        <a class="exp-yt-btn" href="https://youtube.com/@olhartouristta" target="_blank">▶ Ouvir Narrativa</a>
-        <div class="exp-arrow">Explorar <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M0 5h11M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg></div>
+        <div class="exp-tag" data-i18n="exp5_tag">Urca · Bondinho</div>
+        <div class="exp-name" data-i18n="exp5_name">PÃO DE AÇÚCAR</div>
+        <div class="exp-desc" data-i18n="exp5_desc">A vista que faz qualquer pessoa entender porque o Rio é chamado de Cidade Maravilhosa.</div>
+        <a class="exp-yt-btn" href="https://youtube.com/@olhartouristta" target="_blank" data-i18n="exp5_btn">▶ Ouvir Narrativa</a>
+        <div class="exp-arrow" data-i18n="exp5_arrow">Explorar <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M0 5h11M6 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg></div>
       </div>
     </div>
   </div>
@@ -698,10 +698,10 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
   <div class="secret-inner">
     <div class="secret-header reveal">
       <div>
-        <div class="section-label">Rio Secreto</div>
-        <h2 class="section-title">O que os guias<br><span class="serif">não te mostram.</span></h2>
+        <div class="section-label" data-i18n="secret_label">Rio Secreto</div>
+        <h2 class="section-title" data-i18n="secret_title">O que os guias<br><span class="serif">não te mostram.</span></h2>
       </div>
-      <p class="secret-desc">Décadas de vivência local transformadas em roteiros que nenhuma agência de turismo conhece. Aqui, o segredo é o produto.</p>
+      <p class="secret-desc" data-i18n="secret_desc">Décadas de vivência local transformadas em roteiros que nenhuma agência de turismo conhece. Aqui, o segredo é o produto.</p>
     </div>
     <div class="secret-grid">
       <div class="secret-item reveal">
@@ -789,21 +789,21 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
       <div class="sobre-foto-deco"></div>
     </div>
     <div class="sobre-text reveal reveal-delay-1">
-      <div class="section-label">Sobre o Olhar</div>
-      <h2 class="section-title">Marcos Aurelio<br><span class="serif">T. Gonzaga</span></h2>
-      <blockquote class="manifesto-quote">"Turismo é ciência. Também é paixão."</blockquote>
-      <p class="manifesto-body">
+      <div class="section-label" data-i18n="sobre_label">Sobre o Olhar</div>
+      <h2 class="section-title" data-i18n="sobre_title">Marcos Aurelio<br><span class="serif">T. Gonzaga</span></h2>
+      <blockquote class="manifesto-quote" data-i18n="sobre_quote">"Turismo é ciência. Também é paixão."</blockquote>
+      <p class="manifesto-body" data-i18n="sobre_body">
         Turismólogo formado com passagem pelo Bondinho do Pão de Açúcar, na Urca — um dos lugares mais simbólicos do Rio. Mas meu olhar vai além dos cartões-postais.<br><br>
         Neste canal, educação em turismo e tecnologia se unem para revelar o Rio que os guias não contam: a história viva dos bairros e os roteiros que surpreendem.
       </p>
       <div class="sobre-creds" style="margin-top:1.5rem;">
-        <div class="sobre-cred">Turismólogo · Rio de Janeiro</div>
-        <div class="sobre-cred">Experiência no Bondinho do Pão de Açúcar · Urca</div>
-        <div class="sobre-cred">Criador do App GPS Narrativo Olhar Touristta</div>
-        <div class="sobre-cred">Turismo + Tecnologia + IA</div>
+        <div class="sobre-cred" data-i18n="sobre_cred1">Turismólogo · Rio de Janeiro</div>
+        <div class="sobre-cred" data-i18n="sobre_cred2">Experiência no Bondinho do Pão de Açúcar · Urca</div>
+        <div class="sobre-cred" data-i18n="sobre_cred3">Criador do App GPS Narrativo Olhar Touristta</div>
+        <div class="sobre-cred" data-i18n="sobre_cred4">Turismo + Tecnologia + IA</div>
       </div>
       <div style="margin-top:2rem;">
-        <a href="mailto:marcosagonzaga44@gmail.com" class="btn-primary" style="display:inline-flex;">
+        <a href="mailto:marcosagonzaga44@gmail.com" class="btn-primary" style="display:inline-flex;" data-i18n="sobre_btn">
           Entrar em Contato
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>
         </a>
@@ -815,8 +815,8 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
 <!-- TESTIMONIALS -->
 <section class="testimonials" id="depoimentos">
   <div class="section-inner">
-    <div class="section-label reveal">Depoimentos</div>
-    <h2 class="section-title reveal reveal-delay-1">O que dizem<br><span class="serif">os viajantes.</span></h2>
+    <div class="section-label reveal" data-i18n="testi_label">Depoimentos</div>
+    <h2 class="section-title reveal reveal-delay-1" data-i18n="testi_title">O que dizem<br><span class="serif">os viajantes.</span></h2>
     <div class="testi-grid">
       <div class="testi-card reveal">
         <span class="testi-quote-mark">"</span>
@@ -849,8 +849,8 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
 <!-- BLOG / ARTIGOS -->
 <section class="blog" id="blog">
   <div class="section-inner">
-    <div class="section-label reveal">Artigos</div>
-    <h2 class="section-title reveal reveal-delay-1">Conteúdo &<br><span class="serif">Reflexões.</span></h2>
+    <div class="section-label reveal" data-i18n="blog_label">Artigos</div>
+    <h2 class="section-title reveal reveal-delay-1" data-i18n="blog_title">Conteúdo &<br><span class="serif">Reflexões.</span></h2>
     <div class="blog-grid">
       <div class="blog-card featured reveal">
         <div class="blog-img"><div class="blog-img-bg"></div></div>
@@ -898,29 +898,25 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
 <section class="cta-final">
   <div class="cta-bg-glow"></div>
   <div class="cta-final-inner section-inner">
-    <div class="cta-eyebrow reveal">O Rio Está Esperando</div>
-    <h2 class="cta-headline reveal reveal-delay-1">
+    <div class="cta-eyebrow reveal" data-i18n="cta_eyebrow">O Rio Está Esperando</div>
+    <h2 class="cta-headline reveal reveal-delay-1" data-i18n="cta_headline">
       PRONTO PARA<br><span class="gold">REALMENTE VER</span><br>O RIO?
     </h2>
-    <p class="cta-sub reveal reveal-delay-2">
+    <p class="cta-sub reveal reveal-delay-2" data-i18n="cta_sub">
       Não é turismo. É transformação.<br>
       Abra o app. Deixe o Rio te contar sua história.
     </p>
     <div class="cta-buttons reveal reveal-delay-3">
-      <a href="https://marcos-gonzaga.github.io/site1/" class="btn-primary" target="_blank">
+      <a href="https://marcos-gonzaga.github.io/site1/" class="btn-primary" target="_blank" data-i18n="cta_btn1">
         Acessar o App GPS
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>
       </a>
-      <a href="mailto:marcosagonzaga44@gmail.com" class="btn-secondary">
+      <a href="mailto:marcosagonzaga44@gmail.com" class="btn-secondary" data-i18n="cta_btn2">
         Falar com Marcos
       </a>
     </div>
-    <div class="cta-trust reveal reveal-delay-4">
-      <span>✦ Gratuito</span>
-      <span>✦ Sem cadastro</span>
-      <span>✦ Mobile First</span>
-      <span>✦ GPS em Tempo Real</span>
-      <span>✦ Marcos Aurelio T. Gonzaga</span>
+    <div class="cta-trust reveal reveal-delay-4" data-i18n="cta_trust">
+      ✦ Gratuito &nbsp; ✦ Sem cadastro &nbsp; ✦ Mobile First &nbsp; ✦ GPS em Tempo Real
     </div>
   </div>
 </section>
@@ -969,7 +965,7 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo">Olhar Touristta</div>
-        <p class="footer-tagline">"Turismo é ciência. Também é paixão." — Marcos Aurelio T. Gonzaga, Turismólogo · Rio de Janeiro</p>
+        <p class="footer-tagline" data-i18n="footer_tagline">"Turismo é ciência. Também é paixão." — Marcos Aurelio T. Gonzaga, Turismólogo · Rio de Janeiro</p>
         <div class="footer-social">
           <a href="https://www.linkedin.com/in/marcos-gonzaga" target="_blank" class="social-btn">in</a>
           <a href="https://youtube.com/@olhartouristta" target="_blank" class="social-btn">yt</a>
@@ -978,7 +974,7 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
         </div>
       </div>
       <div>
-        <div class="footer-col-title">Experiências</div>
+        <div class="footer-col-title" data-i18n="footer_exp_title">Experiências</div>
         <ul class="footer-links">
           <li><a href="#experiencias">Pedra da Gávea</a></li>
           <li><a href="#experiencias">Cristo Redentor</a></li>
@@ -988,7 +984,7 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
         </ul>
       </div>
       <div>
-        <div class="footer-col-title">Plataforma</div>
+        <div class="footer-col-title" data-i18n="footer_platform_title">Plataforma</div>
         <ul class="footer-links">
           <li><a href="https://marcos-gonzaga.github.io/site1/" target="_blank">App GPS Narrativo</a></li>
           <li><a href="#tecnologia">Tecnologia</a></li>
@@ -997,7 +993,7 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
         </ul>
       </div>
       <div>
-        <div class="footer-col-title">Contato</div>
+        <div class="footer-col-title" data-i18n="footer_contact_title">Contato</div>
         <ul class="footer-links">
           <li><a href="mailto:marcosagonzaga44@gmail.com">marcosagonzaga44@gmail.com</a></li>
           <li><a href="#">Rio de Janeiro, RJ</a></li>
@@ -1006,8 +1002,8 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025–2026 Olhar Touristta · Marcos Aurelio Teixeira Gonzaga · Todos os direitos reservados</span>
-      <span>Turismo Inteligente · Rio de Janeiro · Brasil · CPF sob sigilo</span>
+      <span data-i18n="footer_copy">© 2025–2026 Olhar Touristta · Marcos Aurelio Teixeira Gonzaga · Todos os direitos reservados</span>
+      <span data-i18n="footer_sub">Turismo Inteligente · Rio de Janeiro · Brasil · CPF sob sigilo</span>
     </div>
   </div>
 </footer>
@@ -1280,8 +1276,103 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
    ═══════════════════════════════════════════ */
 const LANGS = {
   pt: {
+    // NAV
+    nav_experiencias: 'Experiências',
+    nav_secreto: 'Rio Secreto',
+    nav_tecnologia: 'Tecnologia',
+    nav_sobre: 'Sobre',
+    nav_blog: 'Blog',
     nav_contact: 'Contato',
     'nav-cta-btn': 'Explorar App',
+    // HERO
+    hero_label: 'Rio de Janeiro · Turismo Inteligente · Experiências Únicas',
+    hero_title: 'O RIO<br><span class="accent">QUE NINGUÉM</span><br><span class="italic">te contou.</span>',
+    hero_sub: 'Histórias, roteiros e segredos de uma cidade<br>que pulsa além do óbvio.',
+    hero_btn1: 'Começar a Explorar',
+    hero_btn2: 'Acessar App GPS',
+    hero_stat1_label: 'Roteiros',
+    hero_stat2_label: 'Experiências GPS',
+    hero_stat3_label: 'Idiomas',
+    hero_stat4_label: 'Amor pelo Rio',
+    // COMPASS SECTION
+    compass_label: 'Rosa dos Ventos · Olhar Touristta',
+    // MANIFESTO / SOBRE
+    manifesto_label: 'Manifesto',
+    manifesto_title: 'Turismo além<br><span class="serif">do óbvio.</span>',
+    manifesto_quote: '"Turismo é ciência. Também é paixão."',
+    manifesto_body: 'Turismólogo formado com passagem pelo Bondinho do Pão de Açúcar, na Urca — um dos lugares mais simbólicos do Rio. Mas meu olhar vai além dos cartões-postais.<br><br>Neste canal, educação em turismo e tecnologia se unem para revelar o Rio que os guias não contam: a história viva dos bairros e os roteiros que surpreendem.',
+    manifesto_card1_label: 'Plataforma',
+    manifesto_card1_title: 'GPS + Storytelling',
+    manifesto_card1_desc: 'Narrativas imersivas ativadas pela sua localização real no Rio de Janeiro.',
+    manifesto_card2_label: 'App',
+    manifesto_card2_title: 'Olhar Touristta',
+    manifesto_card3_label: 'Tecnologia',
+    manifesto_card3_title: 'IA + Turismo',
+    manifesto_card3_desc: 'Inteligência artificial aplicada a experiências culturais e urbanas únicas.',
+    // EXPERIENCES
+    exp_section_label: 'Experiências GPS',
+    exp_section_title: 'Cinco lugares.<br><span class="serif">Infinitas histórias.</span>',
+    exp1_tag: 'Montanha · Mistério',
+    exp1_name: 'PEDRA DA GÁVEA',
+    exp1_desc: 'A rocha que guarda segredos de civilizações extintas. Fenício ou lenda? Você decide.',
+    exp1_btn: '▶ Ouvir Narrativa',
+    exp1_arrow: 'Explorar',
+    exp2_tag: 'Ícone · Espiritualidade',
+    exp2_name: 'CRISTO REDENTOR',
+    exp2_desc: 'Mais do que um monumento. Uma experiência de escala humana impossível de esquecer.',
+    exp2_btn: '▶ Ouvir Narrativa',
+    exp2_arrow: 'Explorar',
+    exp3_tag: 'Mar · Cultura',
+    exp3_name: 'ARPOADOR',
+    exp3_desc: 'Onde artistas, surfistas e sonhadores se encontram ao entardecer. O pôr do sol que une a cidade.',
+    exp3_btn: '▶ Ouvir Narrativa',
+    exp3_arrow: 'Explorar',
+    exp4_tag: 'Bairro · Arte',
+    exp4_name: 'SANTA TERESA',
+    exp4_desc: 'O bairro que recusou o século XXI. Bondes, escadarias, arte em cada parede.',
+    exp4_btn: '▶ Ouvir Narrativa',
+    exp4_arrow: 'Explorar',
+    exp5_tag: 'Urca · Bondinho',
+    exp5_name: 'PÃO DE AÇÚCAR',
+    exp5_desc: 'A vista que faz qualquer pessoa entender porque o Rio é chamado de Cidade Maravilhosa.',
+    exp5_btn: '▶ Ouvir Narrativa',
+    exp5_arrow: 'Explorar',
+    // RIO SECRETO
+    secret_label: 'Rio Secreto',
+    secret_title: 'O que os guias<br><span class="serif">não te mostram.</span>',
+    secret_desc: 'Décadas de vivência local transformadas em roteiros que nenhuma agência de turismo conhece. Aqui, o segredo é o produto.',
+    // SOBRE
+    sobre_label: 'Sobre o Olhar',
+    sobre_title: 'Marcos Aurelio<br><span class="serif">T. Gonzaga</span>',
+    sobre_quote: '"Turismo é ciência. Também é paixão."',
+    sobre_body: 'Turismólogo formado com passagem pelo Bondinho do Pão de Açúcar, na Urca — um dos lugares mais simbólicos do Rio. Mas meu olhar vai além dos cartões-postais.<br><br>Neste canal, educação em turismo e tecnologia se unem para revelar o Rio que os guias não contam: a história viva dos bairros e os roteiros que surpreendem.',
+    sobre_cred1: 'Turismólogo · Rio de Janeiro',
+    sobre_cred2: 'Experiência no Bondinho do Pão de Açúcar · Urca',
+    sobre_cred3: 'Criador do App GPS Narrativo Olhar Touristta',
+    sobre_cred4: 'Turismo + Tecnologia + IA',
+    sobre_btn: 'Entrar em Contato',
+    // TESTIMONIALS
+    testi_label: 'Depoimentos',
+    testi_title: 'O que dizem<br><span class="serif">os viajantes.</span>',
+    // BLOG
+    blog_label: 'Artigos',
+    blog_title: 'Conteúdo &<br><span class="serif">Reflexões.</span>',
+    blog_read: 'Ler Mais →',
+    // CTA FINAL
+    cta_eyebrow: 'O Rio Está Esperando',
+    cta_headline: 'PRONTO PARA<br><span class="gold">REALMENTE VER</span><br>O RIO?',
+    cta_sub: 'Não é turismo. É transformação.<br>Abra o app. Deixe o Rio te contar sua história.',
+    cta_btn1: 'Acessar o App GPS',
+    cta_btn2: 'Falar com Marcos',
+    cta_trust: '✦ Gratuito &nbsp; ✦ Sem cadastro &nbsp; ✦ Mobile First &nbsp; ✦ GPS em Tempo Real',
+    // FOOTER
+    footer_exp_title: 'Experiências',
+    footer_platform_title: 'Plataforma',
+    footer_contact_title: 'Contato',
+    footer_tagline: '"Turismo é ciência. Também é paixão." — Marcos Aurelio T. Gonzaga, Turismólogo · Rio de Janeiro',
+    footer_copy: '© 2025–2026 Olhar Touristta · Marcos Aurelio Teixeira Gonzaga · Todos os direitos reservados',
+    footer_sub: 'Turismo Inteligente · Rio de Janeiro · Brasil',
+    // CONTACT
     contact_label: 'Contato',
     contact_title: 'Fale <span class="serif">comigo.</span>',
     contact_sub: 'Parcerias, projetos, press ou simplesmente trocar uma ideia sobre o Rio — escreva.',
@@ -1292,8 +1383,103 @@ const LANGS = {
     contact_success: '✦ Mensagem enviada! Marcos responderá em breve.',
   },
   en: {
+    // NAV
+    nav_experiencias: 'Experiences',
+    nav_secreto: 'Secret Rio',
+    nav_tecnologia: 'Technology',
+    nav_sobre: 'About',
+    nav_blog: 'Blog',
     nav_contact: 'Contact',
     'nav-cta-btn': 'Explore App',
+    // HERO
+    hero_label: 'Rio de Janeiro · Smart Tourism · Unique Experiences',
+    hero_title: 'THE RIO<br><span class="accent">NO ONE EVER</span><br><span class="italic">told you about.</span>',
+    hero_sub: 'Stories, routes and secrets of a city<br>that pulses beyond the obvious.',
+    hero_btn1: 'Start Exploring',
+    hero_btn2: 'Access GPS App',
+    hero_stat1_label: 'Routes',
+    hero_stat2_label: 'GPS Experiences',
+    hero_stat3_label: 'Languages',
+    hero_stat4_label: 'Love for Rio',
+    // COMPASS SECTION
+    compass_label: 'Compass Rose · Olhar Touristta',
+    // MANIFESTO
+    manifesto_label: 'Manifesto',
+    manifesto_title: 'Tourism beyond<br><span class="serif">the obvious.</span>',
+    manifesto_quote: '"Tourism is science. It is also passion."',
+    manifesto_body: 'A tourism professional who worked at the Sugarloaf Cable Car in Urca — one of Rio\'s most iconic places. But my gaze goes beyond postcards.<br><br>On this channel, tourism education and technology unite to reveal the Rio that guides don\'t tell: the living history of neighborhoods and routes that surprise.',
+    manifesto_card1_label: 'Platform',
+    manifesto_card1_title: 'GPS + Storytelling',
+    manifesto_card1_desc: 'Immersive narratives activated by your real location in Rio de Janeiro.',
+    manifesto_card2_label: 'App',
+    manifesto_card2_title: 'Olhar Touristta',
+    manifesto_card3_label: 'Technology',
+    manifesto_card3_title: 'AI + Tourism',
+    manifesto_card3_desc: 'Artificial intelligence applied to unique cultural and urban experiences.',
+    // EXPERIENCES
+    exp_section_label: 'GPS Experiences',
+    exp_section_title: 'Five places.<br><span class="serif">Infinite stories.</span>',
+    exp1_tag: 'Mountain · Mystery',
+    exp1_name: 'PEDRA DA GÁVEA',
+    exp1_desc: 'The rock that holds secrets of extinct civilizations. Phoenician or legend? You decide.',
+    exp1_btn: '▶ Listen to Narrative',
+    exp1_arrow: 'Explore',
+    exp2_tag: 'Icon · Spirituality',
+    exp2_name: 'CHRIST THE REDEEMER',
+    exp2_desc: 'More than a monument. A human-scale experience impossible to forget.',
+    exp2_btn: '▶ Listen to Narrative',
+    exp2_arrow: 'Explore',
+    exp3_tag: 'Sea · Culture',
+    exp3_name: 'ARPOADOR',
+    exp3_desc: 'Where artists, surfers and dreamers meet at dusk. The sunset that unites the city.',
+    exp3_btn: '▶ Listen to Narrative',
+    exp3_arrow: 'Explore',
+    exp4_tag: 'Neighborhood · Art',
+    exp4_name: 'SANTA TERESA',
+    exp4_desc: 'The neighborhood that refused the 21st century. Trams, staircases, art on every wall.',
+    exp4_btn: '▶ Listen to Narrative',
+    exp4_arrow: 'Explore',
+    exp5_tag: 'Urca · Cable Car',
+    exp5_name: 'SUGARLOAF MOUNTAIN',
+    exp5_desc: 'The view that makes anyone understand why Rio is called the Marvelous City.',
+    exp5_btn: '▶ Listen to Narrative',
+    exp5_arrow: 'Explore',
+    // RIO SECRETO
+    secret_label: 'Secret Rio',
+    secret_title: 'What the guides<br><span class="serif">don\'t show you.</span>',
+    secret_desc: 'Decades of local experience transformed into routes no travel agency knows. Here, the secret is the product.',
+    // SOBRE
+    sobre_label: 'About',
+    sobre_title: 'Marcos Aurelio<br><span class="serif">T. Gonzaga</span>',
+    sobre_quote: '"Tourism is science. It is also passion."',
+    sobre_body: 'A tourism professional who worked at the Sugarloaf Cable Car in Urca — one of Rio\'s most iconic places. But my gaze goes beyond postcards.<br><br>On this channel, tourism education and technology unite to reveal the Rio that guides don\'t tell: the living history of neighborhoods and routes that surprise.',
+    sobre_cred1: 'Tourism Professional · Rio de Janeiro',
+    sobre_cred2: 'Experience at Sugarloaf Cable Car · Urca',
+    sobre_cred3: 'Creator of Olhar Touristta GPS Narrative App',
+    sobre_cred4: 'Tourism + Technology + AI',
+    sobre_btn: 'Get in Touch',
+    // TESTIMONIALS
+    testi_label: 'Testimonials',
+    testi_title: 'What the<br><span class="serif">travelers say.</span>',
+    // BLOG
+    blog_label: 'Articles',
+    blog_title: 'Content &<br><span class="serif">Reflections.</span>',
+    blog_read: 'Read More →',
+    // CTA FINAL
+    cta_eyebrow: 'Rio Is Waiting',
+    cta_headline: 'READY TO<br><span class="gold">TRULY SEE</span><br>RIO?',
+    cta_sub: 'This is not tourism. It\'s transformation.<br>Open the app. Let Rio tell you its story.',
+    cta_btn1: 'Access the GPS App',
+    cta_btn2: 'Talk to Marcos',
+    cta_trust: '✦ Free &nbsp; ✦ No sign-up &nbsp; ✦ Mobile First &nbsp; ✦ Real-Time GPS',
+    // FOOTER
+    footer_exp_title: 'Experiences',
+    footer_platform_title: 'Platform',
+    footer_contact_title: 'Contact',
+    footer_tagline: '"Tourism is science. It is also passion." — Marcos Aurelio T. Gonzaga, Tourism Professional · Rio de Janeiro',
+    footer_copy: '© 2025–2026 Olhar Touristta · Marcos Aurelio Teixeira Gonzaga · All rights reserved',
+    footer_sub: 'Smart Tourism · Rio de Janeiro · Brazil',
+    // CONTACT
     contact_label: 'Contact',
     contact_title: 'Get in <span class="serif">touch.</span>',
     contact_sub: 'Partnerships, projects, press or just want to chat about Rio — write to me.',
@@ -1302,11 +1488,105 @@ const LANGS = {
     contact_message: 'Message',
     contact_send: 'Send Message',
     contact_success: '✦ Message sent! Marcos will get back to you soon.',
-    // Hero & nav
   },
   es: {
+    // NAV
+    nav_experiencias: 'Experiencias',
+    nav_secreto: 'Río Secreto',
+    nav_tecnologia: 'Tecnología',
+    nav_sobre: 'Sobre',
+    nav_blog: 'Blog',
     nav_contact: 'Contacto',
     'nav-cta-btn': 'Explorar App',
+    // HERO
+    hero_label: 'Río de Janeiro · Turismo Inteligente · Experiencias Únicas',
+    hero_title: 'EL RÍO<br><span class="accent">QUE NADIE</span><br><span class="italic">te contó.</span>',
+    hero_sub: 'Historias, rutas y secretos de una ciudad<br>que pulsa más allá de lo obvio.',
+    hero_btn1: 'Comenzar a Explorar',
+    hero_btn2: 'Acceder App GPS',
+    hero_stat1_label: 'Rutas',
+    hero_stat2_label: 'Experiencias GPS',
+    hero_stat3_label: 'Idiomas',
+    hero_stat4_label: 'Amor por Río',
+    // COMPASS SECTION
+    compass_label: 'Rosa de los Vientos · Olhar Touristta',
+    // MANIFESTO
+    manifesto_label: 'Manifiesto',
+    manifesto_title: 'Turismo más allá<br><span class="serif">de lo obvio.</span>',
+    manifesto_quote: '"El turismo es ciencia. También es pasión."',
+    manifesto_body: 'Turismólogo formado con experiencia en el Bondinho do Pão de Açúcar en Urca — uno de los lugares más simbólicos de Río. Pero mi mirada va más allá de las postales.<br><br>En este canal, educación en turismo y tecnología se unen para revelar el Río que las guías no cuentan: la historia viva de los barrios y las rutas que sorprenden.',
+    manifesto_card1_label: 'Plataforma',
+    manifesto_card1_title: 'GPS + Storytelling',
+    manifesto_card1_desc: 'Narrativas inmersivas activadas por tu ubicación real en Río de Janeiro.',
+    manifesto_card2_label: 'App',
+    manifesto_card2_title: 'Olhar Touristta',
+    manifesto_card3_label: 'Tecnología',
+    manifesto_card3_title: 'IA + Turismo',
+    manifesto_card3_desc: 'Inteligencia artificial aplicada a experiencias culturales y urbanas únicas.',
+    // EXPERIENCES
+    exp_section_label: 'Experiencias GPS',
+    exp_section_title: 'Cinco lugares.<br><span class="serif">Infinitas historias.</span>',
+    exp1_tag: 'Montaña · Misterio',
+    exp1_name: 'PEDRA DA GÁVEA',
+    exp1_desc: 'La roca que guarda secretos de civilizaciones extintas. ¿Fenicio o leyenda? Tú decides.',
+    exp1_btn: '▶ Escuchar Narrativa',
+    exp1_arrow: 'Explorar',
+    exp2_tag: 'Ícono · Espiritualidad',
+    exp2_name: 'CRISTO REDENTOR',
+    exp2_desc: 'Más que un monumento. Una experiencia de escala humana imposible de olvidar.',
+    exp2_btn: '▶ Escuchar Narrativa',
+    exp2_arrow: 'Explorar',
+    exp3_tag: 'Mar · Cultura',
+    exp3_name: 'ARPOADOR',
+    exp3_desc: 'Donde artistas, surfistas y soñadores se encuentran al atardecer. El ocaso que une la ciudad.',
+    exp3_btn: '▶ Escuchar Narrativa',
+    exp3_arrow: 'Explorar',
+    exp4_tag: 'Barrio · Arte',
+    exp4_name: 'SANTA TERESA',
+    exp4_desc: 'El barrio que rechazó el siglo XXI. Tranvías, escalinatas, arte en cada pared.',
+    exp4_btn: '▶ Escuchar Narrativa',
+    exp4_arrow: 'Explorar',
+    exp5_tag: 'Urca · Teleférico',
+    exp5_name: 'PAN DE AZÚCAR',
+    exp5_desc: 'La vista que hace que cualquiera entienda por qué Río se llama la Ciudad Maravillosa.',
+    exp5_btn: '▶ Escuchar Narrativa',
+    exp5_arrow: 'Explorar',
+    // RIO SECRETO
+    secret_label: 'Río Secreto',
+    secret_title: 'Lo que las guías<br><span class="serif">no te muestran.</span>',
+    secret_desc: 'Décadas de experiencia local transformadas en rutas que ninguna agencia de turismo conoce. Aquí, el secreto es el producto.',
+    // SOBRE
+    sobre_label: 'Sobre',
+    sobre_title: 'Marcos Aurelio<br><span class="serif">T. Gonzaga</span>',
+    sobre_quote: '"El turismo es ciencia. También es pasión."',
+    sobre_body: 'Turismólogo formado con experiencia en el Bondinho do Pão de Açúcar en Urca — uno de los lugares más simbólicos de Río. Pero mi mirada va más allá de las postales.<br><br>En este canal, educación en turismo y tecnología se unen para revelar el Río que las guías no cuentan: la historia viva de los barrios y las rutas que sorprenden.',
+    sobre_cred1: 'Turismólogo · Río de Janeiro',
+    sobre_cred2: 'Experiencia en el Teleférico del Pan de Azúcar · Urca',
+    sobre_cred3: 'Creador del App GPS Narrativo Olhar Touristta',
+    sobre_cred4: 'Turismo + Tecnología + IA',
+    sobre_btn: 'Ponerse en Contacto',
+    // TESTIMONIALS
+    testi_label: 'Testimonios',
+    testi_title: 'Lo que dicen<br><span class="serif">los viajeros.</span>',
+    // BLOG
+    blog_label: 'Artículos',
+    blog_title: 'Contenido &<br><span class="serif">Reflexiones.</span>',
+    blog_read: 'Leer Más →',
+    // CTA FINAL
+    cta_eyebrow: 'Río Te Está Esperando',
+    cta_headline: '¿LISTO PARA<br><span class="gold">VER DE VERDAD</span><br>RÍO?',
+    cta_sub: 'No es turismo. Es transformación.<br>Abre la app. Deja que Río te cuente su historia.',
+    cta_btn1: 'Acceder al App GPS',
+    cta_btn2: 'Hablar con Marcos',
+    cta_trust: '✦ Gratis &nbsp; ✦ Sin registro &nbsp; ✦ Mobile First &nbsp; ✦ GPS en Tiempo Real',
+    // FOOTER
+    footer_exp_title: 'Experiencias',
+    footer_platform_title: 'Plataforma',
+    footer_contact_title: 'Contacto',
+    footer_tagline: '"El turismo es ciencia. También es pasión." — Marcos Aurelio T. Gonzaga, Turismólogo · Río de Janeiro',
+    footer_copy: '© 2025–2026 Olhar Touristta · Marcos Aurelio Teixeira Gonzaga · Todos los derechos reservados',
+    footer_sub: 'Turismo Inteligente · Río de Janeiro · Brasil',
+    // CONTACT
     contact_label: 'Contacto',
     contact_title: 'Escríbeme <span class="serif">hoy.</span>',
     contact_sub: 'Asociaciones, proyectos, prensa o simplemente quieres charlar sobre Río — escríbeme.',
@@ -1324,12 +1604,14 @@ function setLang(lang) {
   if (btn) btn.classList.add('active');
 
   const t = LANGS[lang] || LANGS.pt;
+
+  // Update all data-i18n elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (t[key] !== undefined) el.innerHTML = t[key];
   });
 
-  // Update placeholders based on language
+  // Update placeholders
   const placeholders = {
     pt: { name: 'Seu nome', phone: '+55 21 99999-9999', email: 'seu@email.com', msg: 'Sua mensagem...' },
     en: { name: 'Your name', phone: '+1 (555) 000-0000', email: 'your@email.com', msg: 'Your message...' },
@@ -1344,6 +1626,9 @@ function setLang(lang) {
     if (inputs[2]) inputs[2].placeholder = p.email;
     if (inputs[3]) inputs[3].placeholder = p.msg;
   }
+
+  // Update html lang attribute
+  document.documentElement.lang = lang === 'en' ? 'en' : lang === 'es' ? 'es' : 'pt-BR';
 }
 
 /* ═══════════════════════════════════════════
