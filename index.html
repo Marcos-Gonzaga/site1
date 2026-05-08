@@ -930,7 +930,7 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
     <h2 class="section-title reveal reveal-delay-1" data-i18n="contact_title">Fale <span class="serif">comigo.</span></h2>
     <p style="color:var(--white-dim);font-size:0.95rem;max-width:520px;margin:1rem 0 3rem;line-height:1.8;" class="reveal reveal-delay-2" data-i18n="contact_sub">Parcerias, projetos, press ou simplesmente trocar uma ideia sobre o Rio — escreva.</p>
     <div style="max-width:640px;" class="reveal reveal-delay-2">
-      <form id="contact-form" action="https://formspree.io/f/marcosagonzaga44@gmail.com" method="POST" style="display:flex;flex-direction:column;gap:1.2rem;">
+      <form id="contact-form" action="https://formspree.io/f/xvzlazdw" method="POST" style="display:flex;flex-direction:column;gap:1.2rem;">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
           <div>
             <label style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;" data-i18n="contact_name">Nome</label>
@@ -1643,24 +1643,23 @@ if (contactForm) {
     btn.innerHTML = '⏳ Enviando...';
     btn.disabled = true;
 
-    const data = new FormData(this);
-    // Use mailto fallback since Formspree needs account setup
-    const name = data.get('name');
-    const phone = data.get('phone') || '';
-    const email = data.get('email');
-    const message = data.get('message');
-
-    const subject = encodeURIComponent('Contato via Olhar Touristta — ' + name);
-    const body = encodeURIComponent("Nome: " + name + "\nTelefone: " + phone + "\nEmail: " + email + "\n\nMensagem:\n" + message);
-    
-    // Show success and open email client
-    setTimeout(() => {
-      document.getElementById('form-success').style.display = 'block';
-      btn.innerHTML = origText;
-      btn.disabled = false;
-      window.location.href = 'mailto:marcosagonzaga44@gmail.com?subject=' + subject + '&body=' + body;
-      contactForm.reset();
-    }, 800);
+    try {
+      const res = await fetch('https://formspree.io/f/xvzlazdw', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(this)
+      });
+      if (res.ok) {
+        document.getElementById('form-success').style.display = 'block';
+        contactForm.reset();
+      } else {
+        alert('Erro ao enviar. Tente novamente.');
+      }
+    } catch (err) {
+      alert('Erro de conexão. Verifique sua internet.');
+    }
+    btn.innerHTML = origText;
+    btn.disabled = false;
   });
 }
 
