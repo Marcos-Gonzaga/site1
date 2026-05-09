@@ -931,7 +931,7 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
     <p style="color:var(--white-dim);font-size:0.95rem;max-width:520px;margin:1rem 0 3rem;line-height:1.8;" class="reveal reveal-delay-2" data-i18n="contact_sub">Parcerias, projetos, press ou simplesmente trocar uma ideia sobre o Rio — escreva.</p>
     <div style="max-width:640px;" class="reveal reveal-delay-2">
       <form id="contact-form" action="https://formspree.io/f/xvzlazdw" method="POST" style="display:flex;flex-direction:column;gap:1.2rem;">
-        <input type="hidden" name="_next" value="https://marcos-gonzaga.github.io/site1/?enviado=sim#contato">
+        <input type="hidden" name="_next" value="https://marcos-gonzaga.github.io/site1/?ok=1#contato">
         <input type="hidden" name="_subject" value="Contato via Olhar Touristta">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
           <div>
@@ -1263,15 +1263,18 @@ document.addEventListener('mousemove', e => {
 });
 
 /* ═══════════════════════════════════════════
-   DETECTAR ENVIO BEM-SUCEDIDO
+   ENVIO BEM-SUCEDIDO
    ═══════════════════════════════════════════ */
-if (window.location.search.includes("enviado=sim")) {
-  var s = document.getElementById("form-success");
-  if (s) s.style.display = "block";
-  history.replaceState(null, "", window.location.pathname + "#contato");
+if (new URLSearchParams(window.location.search).get('ok') === '1') {
+  history.replaceState(null, '', window.location.pathname + '#contato');
+  var s = document.getElementById('form-success');
+  if (s) {
+    s.style.display = 'block';
+    setTimeout(function(){ s.style.display = 'none'; }, 5000);
+  }
 }
 
-/*
+/* ═══════════════════════════════════════════
    SMOOTH SCROLL
    ═══════════════════════════════════════════ */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
