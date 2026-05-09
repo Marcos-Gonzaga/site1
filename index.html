@@ -932,7 +932,6 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
     <div style="max-width:640px;" class="reveal reveal-delay-2">
       <form id="contact-form" action="https://formspree.io/f/xvzlazdw" method="POST" style="display:flex;flex-direction:column;gap:1.2rem;">
         <input type="hidden" name="_next" value="https://marcos-gonzaga.github.io/site1/?ok=1#contato">
-        <input type="hidden" name="_subject" value="Contato via Olhar Touristta">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
           <div>
             <label style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;" data-i18n="contact_name">Nome</label>
@@ -1261,18 +1260,6 @@ document.addEventListener('mousemove', e => {
   const hc = document.querySelector('.hero-content');
   if (hc) hc.style.transform = `translate(${x*0.3}px,${y*0.3}px)`;
 });
-
-/* ═══════════════════════════════════════════
-   ENVIO BEM-SUCEDIDO
-   ═══════════════════════════════════════════ */
-if (new URLSearchParams(window.location.search).get('ok') === '1') {
-  history.replaceState(null, '', window.location.pathname + '#contato');
-  var s = document.getElementById('form-success');
-  if (s) {
-    s.style.display = 'block';
-    setTimeout(function(){ s.style.display = 'none'; }, 5000);
-  }
-}
 
 /* ═══════════════════════════════════════════
    SMOOTH SCROLL
@@ -1648,7 +1635,8 @@ function setLang(lang) {
 /* ═══════════════════════════════════════════
    CONTACT FORM HANDLER (Formspree)
    ═══════════════════════════════════════════ */
-// Form submete direto para o Formspree via HTML — sem fetch
+const contactForm = document.getElementById('contact-form');
+// Form submete direto para Formspree via HTML POST
 
 </script>
 </body>
