@@ -930,10 +930,8 @@ footer { background: var(--deep); border-top: 1px solid var(--glass-border); pad
     <h2 class="section-title reveal reveal-delay-1" data-i18n="contact_title">Fale <span class="serif">comigo.</span></h2>
     <p style="color:var(--white-dim);font-size:0.95rem;max-width:520px;margin:1rem 0 3rem;line-height:1.8;" class="reveal reveal-delay-2" data-i18n="contact_sub">Parcerias, projetos, press ou simplesmente trocar uma ideia sobre o Rio — escreva.</p>
     <div style="max-width:640px;" class="reveal reveal-delay-2">
-      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" style="display:flex;flex-direction:column;gap:1.2rem;">
-        <input type="hidden" name="access_key" value="562e7bf2-f48b-460b-b140-43b936d7d567">
-        <input type="hidden" name="subject" value="Contato via Olhar Touristta">
-        <input type="hidden" name="redirect" value="false">
+      <form id="contact-form" action="https://formspree.io/f/xvzlazdw" method="POST" style="display:flex;flex-direction:column;gap:1.2rem;">
+        <input type="hidden" name="_next" value="https://marcos-gonzaga.github.io/site1/?ok=1#contato">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
           <div>
             <label style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;" data-i18n="contact_name">Nome</label>
@@ -1647,18 +1645,19 @@ if (contactForm) {
     btn.disabled = true;
 
     const formData = new FormData(this);
+    const data = Object.fromEntries(formData);
+
     try {
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formData
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
       });
       const json = await res.json();
       if (json.success) {
         document.getElementById('form-success').style.display = 'block';
         contactForm.reset();
-        setTimeout(() => {
-          document.getElementById('form-success').style.display = 'none';
-        }, 5000);
+        setTimeout(() => { document.getElementById('form-success').style.display = 'none'; }, 5000);
       } else {
         alert('Erro ao enviar. Tente novamente.');
       }
